@@ -1,25 +1,46 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 using UnityEngine.UI;
 
+[CreateAssetMenu(fileName = "employeedata", menuName = "Employee Data", order=51)]
 public class EmployeeData : ScriptableObject {
+    public enum DEPARTMENT {
+        Unknown,
+        Engineering,
+        Operations,
+        CSuite,
+        QualityAssurance
+    }
+
     public enum EXPERIENCE_LEVEL { 
-        unknown, 
+        Unknown, 
         Junior,
         Lead,
         Senior
     }
-
-    [SerializeField] string _employeeName;
-    public string EmployeeName => _employeeName;
+    public enum PRESENTS_AS {
+        Unknown,
+        Cisgender,
+        Transgender,
+        TwoSpirit,
+        NonBinary,
+        Genderqueer,
+        GenderExpressive,
+        GenderFluid,
+        GenderNeutral
+    }
     
-    [SerializeField] EXPERIENCE_LEVEL _experienceLevelLevel;
-    public EXPERIENCE_LEVEL ExperienceLevel => _experienceLevelLevel;
-    
-    // presenting
-    [SerializeField] Texture _icon;
-    public Texture Icon => _icon;
-
-
+    // employee name
+    public string EmployeeName;
+    // department
+    public DEPARTMENT Department;
+    // experience level
+    public EXPERIENCE_LEVEL ExperienceLevel;
+    // gender
+    public PRESENTS_AS Gender;
+    // image
+    // public Sprite Icon;
+    // todo: hat section
 }

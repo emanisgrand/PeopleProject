@@ -139,10 +139,14 @@
         <e p="Scripts" t="Include">
           <e p="BaseStats.cs" t="Include" />
           <e p="ChracterClass.cs" t="Include" />
+          <e p="Employee.cs" t="Include" />
           <e p="EmployeeData.cs" t="Include" />
-          <e p="Mover.cs" t="Include" />
+          <e p="Interaction.cs" t="Include" />
+          <e p="OnScreenCV.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
           <e p="Script.cs" t="Include" />
           <e p="SetEmployeeInfo.cs" t="Include" />
+          <e p="Walkable.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
