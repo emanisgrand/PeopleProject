@@ -141,11 +141,17 @@
           <e p="ChracterClass.cs" t="Include" />
           <e p="Employee.cs" t="Include" />
           <e p="EmployeeData.cs" t="Include" />
+          <e p="EmployeeFactory.cs" t="Include" />
+          <e p="EmployeeRoster.cs" t="Include" />
+          <e p="Employees" t="Include">
+            <e p="GretchenAlphabet.cs" t="Include" />
+          </e>
           <e p="Interaction.cs" t="Include" />
           <e p="OnScreenCV.cs" t="Include" />
           <e p="Player.cs" t="Include" />
-          <e p="Script.cs" t="Include" />
-          <e p="SetEmployeeInfo.cs" t="Include" />
+          <e p="Searchables" t="Include">
+            <e p="WalkableFloor.cs" t="Include" />
+          </e>
           <e p="Walkable.cs" t="Include" />
         </e>
       </e>

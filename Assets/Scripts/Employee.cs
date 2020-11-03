@@ -1,25 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿
 using UnityEngine;
-using UnityEngine.UI;
+using Object = UnityEngine.Object;
 
-public class Employee : MonoBehaviour {
-    
-    public EmployeeData m_employeeData;
+public class Employee : MonoBehaviour
+{
+    [SerializeField] EmployeeData employeeData;
     
     public static event System.Action<EmployeeData> OnEmployeeClicked;
-    
-    private void Awake()
+
+    void Awake()
     {
+        // for testing
+        employeeData = EmployeeFactory.GetNextEmployee();
         Interaction.OnClick3D += Interaction_OnClick3D;
     }
-
-    private void Interaction_OnClick3D(Object o)
+    
+    public void Interaction_OnClick3D(Object o)
     {
-        if (((GameObject) o).GetComponent<Employee>() != null)
+        var emp = ((GameObject) o).GetComponent<Employee>();
+        if (emp != null && emp == this)
         {
-            OnEmployeeClicked?.Invoke(m_employeeData);
+            OnEmployeeClicked?.Invoke(employeeData);
         } 
     }
 }

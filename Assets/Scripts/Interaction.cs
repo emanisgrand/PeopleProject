@@ -1,31 +1,58 @@
-﻿using System.Collections;
+﻿
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
-using UnityEngine.Events;
+using UnityEngine.EventSystems;
+using System.Linq;
+
 public class Interaction : MonoBehaviour
 {
     public static Vector3 hitPoint;
     public static event System.Action<Object> OnClick3D;
     
-    private void Update()
+    public Employee activeEmployee;
+
+    void Update()
     {
         if (Input.GetMouseButtonDown(0)) { Interact(); }
     }
     
-    private void Interact() 
+    public void Interact()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        
-        bool hasHit = Physics.Raycast(ray, out hit);
-        
-        if (hit.collider!=null)
+
+        if (!EventSystem.current.IsPointerOverGameObject())
         {
-            hitPoint = hit.point;
-            
-            // signal out what has been hit
-            OnClick3D?.Invoke(hit.collider.gameObject);
+            RaycastHit[] hits;
+            hits = Physics.RaycastAll(ray, 100f);
+
+            List<RaycastHit> hitList = hits.ToList();
+            hitList = hitList.OrderBy(x 
+                => Vector3.Distance(Camera.main.transform.position, x.point)).ToList();
+
+            foreach (RaycastHit hit in hitList)
+            {
+                Debug.Log(hit.collider.gameObject.name);
+                
+                if (hit.collider.gameObject.GetComponent<Employee>() != null)
+                {
+                    OnClick3D?.Invoke(hit.collider.gameObject);
+                    break;
+                }
+                
+                // TODO: check for interactable objects
+                // if (hit.collider.gameObject.GetComponent<InteractiveObj>() != null)
+                // {
+                //     OnClick3D?.Invoke(hit.collider.gameObject);
+                //     break;
+                // }
+                
+                if (hit.collider.gameObject.GetComponent<WalkableFloor>() != null)
+                {
+                    hitPoint = hit.point;   
+                    OnClick3D?.Invoke(hit.collider.gameObject);
+                    break;
+                }
+            }
         }
     }
 }

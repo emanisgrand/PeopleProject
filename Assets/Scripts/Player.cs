@@ -6,13 +6,18 @@ using UnityEngine.AI;
 public class Player : MonoBehaviour
 {
     NavMeshAgent agent;
+    // if not static...
+    // Interaction interaction;
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
         Interaction.OnClick3D += Interaction_OnClick3D;
+        // if (interaction == null) { interaction = FindObjectOfType<Interaction>(); }
     }
+    
     void Interaction_OnClick3D(Object o) {
-        if ( ( (GameObject)o).GetComponent<Collider>())
+        Debug.Log("Trying to move: " + o.name);
+        if ( ( (GameObject)o).GetComponent<WalkableFloor>())
         {
             HandlePlayerMovement();
         }

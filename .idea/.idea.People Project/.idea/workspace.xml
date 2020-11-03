@@ -19,7 +19,36 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86e81f2c-5445-4e16-b7e2-df644cac3df6" name="Default Changelist" comment="" />
+    <list default="true" id="86e81f2c-5445-4e16-b7e2-df644cac3df6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Employee Data.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Bobby Walnut.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Bobby Walnut.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Byron Trillby.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Byron Trillby.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Ceaser Cheese.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Ceaser Cheese.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Gretchen Alphabet.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Gretchen Alphabet.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Helen Pulver.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Helen Pulver.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Priscilla Chilla.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Priscilla Chilla.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Gretchen Alphabet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Gretchen Alphabet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/_employee.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/_employee.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Employee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Employee.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Script.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Script.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SetEmployeeInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SetEmployeeInfo.cs.meta" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,9 +59,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChracterClass.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SetEmployeeInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EmployeeRoster.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EmployeeData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Employees/GretchenAlphabet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EmployeeFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -43,10 +74,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SetEmployeeInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Mover.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EmployeeData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/events.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HelenPulver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Listener.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Employees/GretchenAlphabet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EmployeeRoster.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EmployeeFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Employee.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Employee.cs" />
       </list>
     </option>
   </component>
@@ -56,6 +93,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -93,6 +131,7 @@
       <workItem from="1602781108032" duration="776000" />
       <workItem from="1603279674713" duration="4409000" />
       <workItem from="1603910129308" duration="27551000" />
+      <workItem from="1604341233752" duration="19334000" />
     </task>
     <task id="LOCAL-00001" summary="created onscreenCV event and display signals">
       <created>1604018911152</created>
@@ -119,6 +158,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created onscreenCV event and display signals" />
@@ -129,21 +169,33 @@
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
     <state x="3557" y="427" key="Vcs.Push.Dialog.v2/0.0.5120.1410@0.0.5120.1410" timestamp="1604018915679" />
-    <state x="4260" y="60" width="793" height="1215" key="dock-window-1" timestamp="1604010312684">
+    <state x="1570" y="154" width="1324" height="1253" key="dock-window-1" timestamp="1604355449959">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
-    <state x="4260" y="60" width="793" height="1215" key="dock-window-1/0.0.5120.1410@0.0.5120.1410" timestamp="1604010312684" />
-    <state x="2233" y="89" width="793" height="1198" key="dock-window-2" timestamp="1604010312684">
+    <state x="1570" y="154" width="1324" height="1253" key="dock-window-1/0.0.5120.1410@0.0.5120.1410" timestamp="1604355449959" />
+    <state x="1338" y="66" width="907" height="1253" key="dock-window-2" timestamp="1604362299030">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
-    <state x="2233" y="89" width="793" height="1198" key="dock-window-2/0.0.5120.1410@0.0.5120.1410" timestamp="1604010312684" />
+    <state x="1338" y="66" width="907" height="1253" key="dock-window-2/0.0.5120.1410@0.0.5120.1410" timestamp="1604362299030" />
+    <state x="2228" y="66" width="907" height="1253" key="dock-window-3" timestamp="1604371440518">
+      <screen x="0" y="0" width="5120" height="1410" />
+    </state>
+    <state x="2228" y="66" width="907" height="1253" key="dock-window-3/0.0.5120.1410@0.0.5120.1410" timestamp="1604371440518" />
+    <state x="3546" y="104" width="907" height="1253" key="dock-window-4" timestamp="1604367573485">
+      <screen x="0" y="0" width="5120" height="1410" />
+    </state>
+    <state x="3546" y="104" width="907" height="1253" key="dock-window-4/0.0.5120.1410@0.0.5120.1410" timestamp="1604367573485" />
+    <state x="3158" y="59" width="907" height="1253" key="dock-window-5" timestamp="1604370027695">
+      <screen x="0" y="0" width="5120" height="1410" />
+    </state>
+    <state x="3158" y="59" width="907" height="1253" key="dock-window-5/0.0.5120.1410@0.0.5120.1410" timestamp="1604370027695" />
     <state x="3449" y="321" key="run.anything.popup" timestamp="1604013801435">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
     <state x="3449" y="321" key="run.anything.popup/0.0.5120.1410@0.0.5120.1410" timestamp="1604013801435" />
-    <state x="3456" y="337" width="672" height="678" key="search.everywhere.popup" timestamp="1604013298389">
+    <state x="3456" y="337" width="672" height="678" key="search.everywhere.popup" timestamp="1604371754697">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
-    <state x="3456" y="337" width="672" height="678" key="search.everywhere.popup/0.0.5120.1410@0.0.5120.1410" timestamp="1604013298389" />
+    <state x="3456" y="337" width="672" height="678" key="search.everywhere.popup/0.0.5120.1410@0.0.5120.1410" timestamp="1604371754697" />
   </component>
 </project>

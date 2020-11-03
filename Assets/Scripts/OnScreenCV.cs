@@ -1,34 +1,28 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro.EditorUtilities;
-using UnityEditor;
-using UnityEditor.SceneManagement;
+﻿
 using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(OnScreenCV))]
-public class OnScreenCV : MonoBehaviour
-{ 
+public class OnScreenCV : MonoBehaviour {
+    // listener
  [SerializeField] Text nameText;
  [SerializeField] Text experienceText;
  [SerializeField] Text genderText;
  [SerializeField] Text department;
-
- private void Awake()
+ 
+ void Awake()
     {
-     Employee.OnEmployeeClicked += OnEmployeeClicked;
-        
+        Employee.OnEmployeeClicked += OnEmployeeClick;
     }
-
-    private void OnEmployeeClicked(EmployeeData obj)
+    
+    void OnEmployeeClick(EmployeeData obj)
     {
-        
         nameText.text = obj.name;
         experienceText.text = obj.ExperienceLevel.ToString();
         genderText.text = obj.Gender.ToString();
         department.text = obj.Department.ToString();
-        this.gameObject.SetActive(true);
+
+        if (!this.gameObject.activeSelf) { this.gameObject.SetActive(true); }
     }
     
     public void ClosePanel() {
