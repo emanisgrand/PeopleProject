@@ -10,7 +10,6 @@ public class Employee : MonoBehaviour
 
     void Awake()
     {
-        // for testing
         employeeData = EmployeeFactory.GetNextEmployee();
         Interaction.OnClick3D += Interaction_OnClick3D;
     }

@@ -22,32 +22,26 @@
     <list default="true" id="86e81f2c-5445-4e16-b7e2-df644cac3df6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Employee Data.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Bobby Walnut.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Bobby Walnut.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Byron Trillby.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Byron Trillby.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Ceaser Cheese.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Ceaser Cheese.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Gretchen Alphabet.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Gretchen Alphabet.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Helen Pulver.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Helen Pulver.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Priscilla Chilla.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Employee Data/Priscilla Chilla.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Gretchen Alphabet.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Gretchen Alphabet.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/_employee.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/_employee.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Materials/SimpleOfficeInteriors.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Materials/SimpleOfficeInteriors.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Prefabs/SO_Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Prefabs/SO_Door.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Prefabs/SO_Wall_Door_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Prefabs/SO_Wall_Door_01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Prefabs/SO_Wall_Door_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Prefabs/SO_Wall_Door_02.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Prefabs/SO_Wall_Glass_Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Prefabs/SO_Wall_Glass_Door.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/black.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/black.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/eq9r0r1enkqy.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/eq9r0r1enkqy.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/f9158caade7bcb2bda08cec41844bd0a.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/f9158caade7bcb2bda08cec41844bd0a.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/red.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/red.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice/NavMesh.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Employee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Employee.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Script.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Script.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SetEmployeeInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SetEmployeeInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +57,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EmployeeData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Employees/GretchenAlphabet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimateDoor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EmployeeFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -81,9 +77,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EmployeeRoster.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EmployeeFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimateDoor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InteractiveObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Employee.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Surfaces/Outline.shader" />
       </list>
     </option>
   </component>
@@ -131,7 +131,8 @@
       <workItem from="1602781108032" duration="776000" />
       <workItem from="1603279674713" duration="4409000" />
       <workItem from="1603910129308" duration="27551000" />
-      <workItem from="1604341233752" duration="19334000" />
+      <workItem from="1604341233752" duration="30567000" />
+      <workItem from="1604508714645" duration="10267000" />
     </task>
     <task id="LOCAL-00001" summary="created onscreenCV event and display signals">
       <created>1604018911152</created>
@@ -140,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604018911152</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="employee data is displayed on click">
+      <created>1604377237172</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604377237172</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,29 +170,30 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created onscreenCV event and display signals" />
-    <option name="LAST_COMMIT_MESSAGE" value="created onscreenCV event and display signals" />
+    <MESSAGE value="employee data is displayed on click" />
+    <option name="LAST_COMMIT_MESSAGE" value="employee data is displayed on click" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="3557" y="427" key="Vcs.Push.Dialog.v2" timestamp="1604018915679">
+    <state x="1857" y="343" key="Vcs.Push.Dialog.v2" timestamp="1604377248662">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
-    <state x="3557" y="427" key="Vcs.Push.Dialog.v2/0.0.5120.1410@0.0.5120.1410" timestamp="1604018915679" />
-    <state x="1570" y="154" width="1324" height="1253" key="dock-window-1" timestamp="1604355449959">
+    <state x="1857" y="343" key="Vcs.Push.Dialog.v2/0.0.5120.1410@0.0.5120.1410" timestamp="1604377248662" />
+    <state x="3534" y="53" width="960" height="1316" key="dock-window-1" timestamp="1604512879389">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
-    <state x="1570" y="154" width="1324" height="1253" key="dock-window-1/0.0.5120.1410@0.0.5120.1410" timestamp="1604355449959" />
-    <state x="1338" y="66" width="907" height="1253" key="dock-window-2" timestamp="1604362299030">
+    <state x="3534" y="53" width="960" height="1316" key="dock-window-1/0.0.5120.1410@0.0.5120.1410" timestamp="1604512879389" />
+    <state x="3385" y="118" width="960" height="1316" key="dock-window-2" timestamp="1604519347390">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
-    <state x="1338" y="66" width="907" height="1253" key="dock-window-2/0.0.5120.1410@0.0.5120.1410" timestamp="1604362299030" />
-    <state x="2228" y="66" width="907" height="1253" key="dock-window-3" timestamp="1604371440518">
+    <state x="3385" y="118" width="960" height="1316" key="dock-window-2/0.0.5120.1410@0.0.5120.1410" timestamp="1604519347390" />
+    <state x="2279" y="60" width="1078" height="1316" key="dock-window-3" timestamp="1604514017921">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
-    <state x="2228" y="66" width="907" height="1253" key="dock-window-3/0.0.5120.1410@0.0.5120.1410" timestamp="1604371440518" />
-    <state x="3546" y="104" width="907" height="1253" key="dock-window-4" timestamp="1604367573485">
+    <state x="2279" y="60" width="1078" height="1316" key="dock-window-3/0.0.5120.1410@0.0.5120.1410" timestamp="1604514017921" />
+    <state x="2664" y="40" width="1078" height="1316" key="dock-window-4" timestamp="1604608632502">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
-    <state x="3546" y="104" width="907" height="1253" key="dock-window-4/0.0.5120.1410@0.0.5120.1410" timestamp="1604367573485" />
+    <state x="2664" y="40" width="1078" height="1316" key="dock-window-4/0.0.5120.1410@0.0.5120.1410" timestamp="1604608632502" />
     <state x="3158" y="59" width="907" height="1253" key="dock-window-5" timestamp="1604370027695">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
@@ -193,9 +202,9 @@
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
     <state x="3449" y="321" key="run.anything.popup/0.0.5120.1410@0.0.5120.1410" timestamp="1604013801435" />
-    <state x="3456" y="337" width="672" height="678" key="search.everywhere.popup" timestamp="1604371754697">
+    <state x="3456" y="337" width="672" height="678" key="search.everywhere.popup" timestamp="1604519470853">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
-    <state x="3456" y="337" width="672" height="678" key="search.everywhere.popup/0.0.5120.1410@0.0.5120.1410" timestamp="1604371754697" />
+    <state x="3456" y="337" width="672" height="678" key="search.everywhere.popup/0.0.5120.1410@0.0.5120.1410" timestamp="1604519470853" />
   </component>
 </project>

@@ -9,8 +9,6 @@ public class Interaction : MonoBehaviour
     public static Vector3 hitPoint;
     public static event System.Action<Object> OnClick3D;
     
-    public Employee activeEmployee;
-
     void Update()
     {
         if (Input.GetMouseButtonDown(0)) { Interact(); }
@@ -26,25 +24,23 @@ public class Interaction : MonoBehaviour
             hits = Physics.RaycastAll(ray, 100f);
 
             List<RaycastHit> hitList = hits.ToList();
+            
             hitList = hitList.OrderBy(x 
                 => Vector3.Distance(Camera.main.transform.position, x.point)).ToList();
 
             foreach (RaycastHit hit in hitList)
             {
-                Debug.Log(hit.collider.gameObject.name);
-                
                 if (hit.collider.gameObject.GetComponent<Employee>() != null)
                 {
                     OnClick3D?.Invoke(hit.collider.gameObject);
                     break;
                 }
                 
-                // TODO: check for interactable objects
-                // if (hit.collider.gameObject.GetComponent<InteractiveObj>() != null)
-                // {
-                //     OnClick3D?.Invoke(hit.collider.gameObject);
-                //     break;
-                // }
+                if (hit.collider.gameObject.GetComponent<OfficeObject>() != null)
+                {
+                    OnClick3D?.Invoke(hit.collider.gameObject);
+                    break;
+                }
                 
                 if (hit.collider.gameObject.GetComponent<WalkableFloor>() != null)
                 {
