@@ -5,8 +5,8 @@ using Object = UnityEngine.Object;
 public class OfficeObject : MonoBehaviour
 {
    Renderer rend;
-   float outlineSize = 1.08f;
-   float defaultOutline = 1;
+   float outlineSize = 0.07f;
+   float defaultOutline = 0;
    
    private void Awake()
    {
