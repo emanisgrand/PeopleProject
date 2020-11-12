@@ -20,19 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86e81f2c-5445-4e16-b7e2-df644cac3df6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Demo/_DemoSettings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Demo/_DemoSettings.lighting" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Textures/Materials/Outlined_impleOffice_Texture.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Textures/Materials/Outlined_impleOffice_Texture.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Textures/SimpleOffice_Texture.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Textures/SimpleOffice_Texture.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Employee.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Employee.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Employees.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Employees/GretchenAlphabet.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Employees/GretchenAlphabet.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Surfaces/Unlit_Outline.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Surfaces/Unlit_Outline.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +28,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -52,6 +45,7 @@
     <setting file="file://$PROJECT_DIR$/../../../Course Files/RTS Files/Chapter 9/08/Unity 3D RTS/Assets/Scripts/Earnings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.1.4f1/Editor/Data/CGIncludes/AutoLight.cginc" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Course Files/RTS Files/Chapter 9/04/Unity 3D RTS/Assets/Scripts/RtsManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Unity Files/UpWork/People Project/People Project/Assets/Scenes/_MediumOffice.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EmployeeFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -147,7 +141,7 @@
       <workItem from="1603910129308" duration="27551000" />
       <workItem from="1604341233752" duration="30567000" />
       <workItem from="1604508714645" duration="10267000" />
-      <workItem from="1605146025497" duration="13314000" />
+      <workItem from="1605146025497" duration="14659000" />
     </task>
     <task id="LOCAL-00001" summary="created onscreenCV event and display signals">
       <created>1604018911152</created>
@@ -163,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604377237172</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added a few packages for UI and Astar. Added AI logic">
+      <created>1605217242109</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605217242109</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,21 +187,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created onscreenCV event and display signals" />
     <MESSAGE value="employee data is displayed on click" />
-    <option name="LAST_COMMIT_MESSAGE" value="employee data is displayed on click" />
+    <MESSAGE value="added a few packages for UI and Astar. Added AI logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1857" y="343" key="Vcs.Push.Dialog.v2" timestamp="1604377248662">
+    <state x="1857" y="343" key="Vcs.Push.Dialog.v2" timestamp="1605217250073">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
-    <state x="1857" y="343" key="Vcs.Push.Dialog.v2/0.0.5120.1410@0.0.5120.1410" timestamp="1604377248662" />
+    <state x="1857" y="343" key="Vcs.Push.Dialog.v2/0.0.5120.1410@0.0.5120.1410" timestamp="1605217250073" />
     <state x="1832" y="63" width="1174" height="1253" key="dock-window-1" timestamp="1605192543494">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
     <state x="1832" y="63" width="1174" height="1253" key="dock-window-1/0.0.5120.1410@0.0.5120.1410" timestamp="1605192543494" />
-    <state x="1779" y="134" width="825" height="1136" key="dock-window-2" timestamp="1605208727721">
+    <state x="2395" y="162" width="825" height="1136" key="dock-window-2" timestamp="1605219663453">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
-    <state x="1779" y="134" width="825" height="1136" key="dock-window-2/0.0.5120.1410@0.0.5120.1410" timestamp="1605208727721" />
+    <state x="2395" y="162" width="825" height="1136" key="dock-window-2/0.0.5120.1410@0.0.5120.1410" timestamp="1605219663453" />
     <state x="3482" y="0" width="1024" height="1136" key="dock-window-3" timestamp="1605197245601">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
