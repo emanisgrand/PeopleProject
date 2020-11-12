@@ -22,26 +22,17 @@
     <list default="true" id="86e81f2c-5445-4e16-b7e2-df644cac3df6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Materials/SimpleOfficeInteriors.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Materials/SimpleOfficeInteriors.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Prefabs/SO_Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Prefabs/SO_Door.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Prefabs/SO_Wall_Door_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Prefabs/SO_Wall_Door_01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Prefabs/SO_Wall_Door_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Prefabs/SO_Wall_Door_02.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Prefabs/SO_Wall_Glass_Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Prefabs/SO_Wall_Glass_Door.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/black.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/black.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/eq9r0r1enkqy.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/eq9r0r1enkqy.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/f9158caade7bcb2bda08cec41844bd0a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/f9158caade7bcb2bda08cec41844bd0a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/red.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/red.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Demo/_DemoSettings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Demo/_DemoSettings.lighting" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Textures/Materials/Outlined_impleOffice_Texture.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Textures/Materials/Outlined_impleOffice_Texture.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Textures/SimpleOffice_Texture.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/SimpleOfficeInteriors/_Textures/SimpleOffice_Texture.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Employee.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Employee.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice/NavMesh.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Employee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Employee.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Employees.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Employees/GretchenAlphabet.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Employees/GretchenAlphabet.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Surfaces/Unlit_Outline.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Surfaces/Unlit_Outline.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,15 +43,28 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChracterClass.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EmployeeRoster.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/AiDoNothing.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/AiSupport.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Course Files/RTS Files/Chapter 9/08/Unity 3D RTS/Assets/Scripts/Ai/CreateBaseAi.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EmployeeData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Employees/GretchenAlphabet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimateDoor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIWaypointNetwork.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Course Files/RTS Files/Chapter 9/08/Unity 3D RTS/Assets/Scripts/Earnings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.1.4f1/Editor/Data/CGIncludes/AutoLight.cginc" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Course Files/RTS Files/Chapter 9/04/Unity 3D RTS/Assets/Scripts/RtsManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EmployeeFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChracterClass.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/AIController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EmployeeRoster.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Course Files/RTS Files/Chapter 9/04/Unity 3D RTS/Assets/Scripts/Definitions/PlayerSetupDefinition.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HireAi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Course Files/RTS Files/Chapter 9/04/Unity 3D RTS/Assets/Scripts/Player.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ProductData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/CreateProductAI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -80,10 +84,20 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimateDoor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractiveObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Employee.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Surfaces/Outline.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AIWaypointNetwork.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/AiBehavior.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/AiDoNothing.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Product.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Product.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ProductData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/AiSupport.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/CreateProductAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/AIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HireAi.cs" />
       </list>
     </option>
   </component>
@@ -133,6 +147,7 @@
       <workItem from="1603910129308" duration="27551000" />
       <workItem from="1604341233752" duration="30567000" />
       <workItem from="1604508714645" duration="10267000" />
+      <workItem from="1605146025497" duration="13314000" />
     </task>
     <task id="LOCAL-00001" summary="created onscreenCV event and display signals">
       <created>1604018911152</created>
@@ -178,18 +193,18 @@
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
     <state x="1857" y="343" key="Vcs.Push.Dialog.v2/0.0.5120.1410@0.0.5120.1410" timestamp="1604377248662" />
-    <state x="3534" y="53" width="960" height="1316" key="dock-window-1" timestamp="1604512879389">
+    <state x="1832" y="63" width="1174" height="1253" key="dock-window-1" timestamp="1605192543494">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
-    <state x="3534" y="53" width="960" height="1316" key="dock-window-1/0.0.5120.1410@0.0.5120.1410" timestamp="1604512879389" />
-    <state x="3385" y="118" width="960" height="1316" key="dock-window-2" timestamp="1604519347390">
+    <state x="1832" y="63" width="1174" height="1253" key="dock-window-1/0.0.5120.1410@0.0.5120.1410" timestamp="1605192543494" />
+    <state x="1779" y="134" width="825" height="1136" key="dock-window-2" timestamp="1605208727721">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
-    <state x="3385" y="118" width="960" height="1316" key="dock-window-2/0.0.5120.1410@0.0.5120.1410" timestamp="1604519347390" />
-    <state x="2279" y="60" width="1078" height="1316" key="dock-window-3" timestamp="1604514017921">
+    <state x="1779" y="134" width="825" height="1136" key="dock-window-2/0.0.5120.1410@0.0.5120.1410" timestamp="1605208727721" />
+    <state x="3482" y="0" width="1024" height="1136" key="dock-window-3" timestamp="1605197245601">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
-    <state x="2279" y="60" width="1078" height="1316" key="dock-window-3/0.0.5120.1410@0.0.5120.1410" timestamp="1604514017921" />
+    <state x="3482" y="0" width="1024" height="1136" key="dock-window-3/0.0.5120.1410@0.0.5120.1410" timestamp="1605197245601" />
     <state x="2664" y="40" width="1078" height="1316" key="dock-window-4" timestamp="1604608632502">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
@@ -202,9 +217,9 @@
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
     <state x="3449" y="321" key="run.anything.popup/0.0.5120.1410@0.0.5120.1410" timestamp="1604013801435" />
-    <state x="3456" y="337" width="672" height="678" key="search.everywhere.popup" timestamp="1604519470853">
+    <state x="3456" y="337" width="672" height="678" key="search.everywhere.popup" timestamp="1605196510489">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
-    <state x="3456" y="337" width="672" height="678" key="search.everywhere.popup/0.0.5120.1410@0.0.5120.1410" timestamp="1604519470853" />
+    <state x="3456" y="337" width="672" height="678" key="search.everywhere.popup/0.0.5120.1410@0.0.5120.1410" timestamp="1605196510489" />
   </component>
 </project>

@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Player : MonoBehaviour
 {
-    
+    public float Money;
     NavMeshAgent agent;
     
     private void Awake()
