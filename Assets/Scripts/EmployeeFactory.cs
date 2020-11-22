@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class EmployeeFactory : MonoBehaviour
 {
-   
    public GameObject employeePrefab;
    bool initialized = false;
    int next = 0;
@@ -14,7 +13,7 @@ public class EmployeeFactory : MonoBehaviour
    public static EmployeeFactory Instance;
    public EmployeeRoster EmployeeRoster;
 
-   [SerializeField] private List<Transform> spawnPoints;
+   public List<Transform> wayPoints;
    
    private void Awake()
    {
@@ -41,7 +40,8 @@ public class EmployeeFactory : MonoBehaviour
       
       return employee;
    }
-   
+
+   // Initialize the list of employees 
    void Init()
    {
       try
@@ -64,7 +64,8 @@ public class EmployeeFactory : MonoBehaviour
       for (int i = 0; i < n; i++)
       {
          GameObject obj = Instantiate(employeePrefab);
-         obj.transform.position = spawnPoints[i].transform.position;
+         
+         obj.transform.position = wayPoints[i].position;
       } 
    }
 }

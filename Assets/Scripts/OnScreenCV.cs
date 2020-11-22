@@ -1,4 +1,5 @@
 ﻿
+using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,7 @@ public class OnScreenCV : MonoBehaviour {
  [SerializeField] Text experienceText;
  [SerializeField] Text genderText;
  [SerializeField] Text department;
+ [SerializeField] Text focusText;
  
  void Awake()
     {
@@ -17,10 +19,11 @@ public class OnScreenCV : MonoBehaviour {
     
     void OnEmployeeClick(EmployeeData obj)
     {
-        nameText.text = obj.name;
-        experienceText.text = obj.ExperienceLevel.ToString();
-        genderText.text = obj.Gender.ToString();
-        department.text = obj.Department.ToString();
+        nameText.text = "name: " + obj.name.ToString();
+        experienceText.text = "xp lvl: " + obj.ExperienceLevel.ToString();
+        genderText.text = "presents as: " + obj.Gender.ToString();
+        department.text = "dept: " + obj.Department.ToString();
+        focusText.text = "focus: " + obj.statFocus.ToString(CultureInfo.CurrentCulture);
 
         if (!this.gameObject.activeSelf) { this.gameObject.SetActive(true); }
     }

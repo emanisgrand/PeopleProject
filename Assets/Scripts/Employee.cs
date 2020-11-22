@@ -4,8 +4,13 @@ using Object = UnityEngine.Object;
 
 public class Employee : MonoBehaviour
 {
-    [SerializeField] EmployeeData employeeData;
-    
+    private EmployeeData employeeData; 
+    public EmployeeData EmployeeData
+    {
+        get => employeeData;
+        set => employeeData = value;
+    }
+
     public static event System.Action<EmployeeData> OnEmployeeClicked;
 
     void Awake()

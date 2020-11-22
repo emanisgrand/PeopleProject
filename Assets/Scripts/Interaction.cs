@@ -8,7 +8,7 @@ public class Interaction : MonoBehaviour
 {
     public static Vector3 hitPoint;
     public static event System.Action<Object> OnClick3D;
-    
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0)) { Interact(); }
@@ -44,7 +44,7 @@ public class Interaction : MonoBehaviour
                 
                 if (hit.collider.gameObject.GetComponent<WalkableFloor>() != null)
                 {
-                    hitPoint = hit.point;   
+                    hitPoint = hit.point;
                     OnClick3D?.Invoke(hit.collider.gameObject);
                     break;
                 }

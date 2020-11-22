@@ -581,17 +581,17 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    1: dUI_MANAGER
-    4: dUI_MANAGER
-    7: dUI_MANAGER
-    13: dUI_MANAGER
-    14: dUI_MANAGER
-    19: dUI_MANAGER
-    21: dUI_MANAGER
-    25: dUI_MANAGER
-    27: dUI_MANAGER
-    28: dUI_MANAGER
-    29: dUI_MANAGER
+    1: 
+    4: 
+    7: 
+    13: 
+    14: 
+    19: 
+    21: 
+    25: 
+    27: 
+    28: 
+    29: 
   platformArchitecture: {}
   scriptingBackend: {}
   il2cppCompilerConfiguration: {}
