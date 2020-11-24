@@ -1,9 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using Pathfinding;
 using UnityEngine;
 
+namespace Pathfinding {
 [CreateAssetMenu(menuName = "Scriptable AI/New Action/Walkabout")]
-public class WalkaboutAction : Action
+    public class WalkaboutAction : Action
 {
     public override void Act(StateController controller)
     {
@@ -12,17 +15,15 @@ public class WalkaboutAction : Action
 
     private void Walk(StateController controller)
     {
-        controller.navMeshAgent.destination = controller.wayPointList[controller.nextWayPoint].position;
-#pragma warning disable 618
-        controller.navMeshAgent.Resume();
-#pragma warning restore 618
+        controller.aiDestination.target.position = controller.wayPointList[controller.nextWayPoint].position;
 
-        if (controller.navMeshAgent.remainingDistance <= controller.navMeshAgent.stoppingDistance
-            && !controller.navMeshAgent.pathPending)
+        
+        if (controller.aiPath.remainingDistance <= 
+            controller.aiPath.endReachedDistance && !controller.aiPath.pathPending)
         {
-            // don't exceed the length of the waypoint list. 
             controller.nextWayPoint = (controller.nextWayPoint + 1) % controller.wayPointList.Count;
         }
         
     }
+}
 }

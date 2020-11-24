@@ -245,17 +245,15 @@
             <e p="WalkaboutAction.cs" t="Include" />
           </e>
           <e p="AnimateDoor.cs" t="Include" />
-          <e p="BaseStats.cs" t="Include" />
-          <e p="ChracterClass.cs" t="Include" />
+          <e p="CreateNew" t="Include">
+            <e p="EmployeeData.cs" t="Include" />
+            <e p="EmployeeRoster.cs" t="Include" />
+          </e>
           <e p="Employee.cs" t="Include" />
           <e p="EmployeeFactory.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Interaction.cs" t="Include" />
           <e p="MouseControlledMovement.cs" t="Include" />
-          <e p="ObjectData" t="Include">
-            <e p="EmployeeData.cs" t="Include" />
-            <e p="EmployeeRoster.cs" t="Include" />
-          </e>
           <e p="OfficeObject.cs" t="Include" />
           <e p="OnScreenCV.cs" t="Include" />
           <e p="Printer.cs" t="Include" />

@@ -13,7 +13,6 @@ public class ScanDecision : Decision
 
     private bool Scan(StateController controller)
     {
-        controller.navMeshAgent.Stop();
         controller.transform.Rotate(0,   controller.Data.turnSpeed * Time.deltaTime, 0);
         return controller.CheckIfCountDownElapsed(controller.Data.searchDuration);
     }

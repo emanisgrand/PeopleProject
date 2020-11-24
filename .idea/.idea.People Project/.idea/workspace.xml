@@ -22,39 +22,20 @@
     <list default="true" id="86e81f2c-5445-4e16-b7e2-df644cac3df6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Employee.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Employee.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WayPoints 1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WayPoints 1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WayPoints 2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WayPoints 2.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice/NavMesh.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/ActiveStateDecision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/ActiveStateDecision.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/ChaseAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/ChaseAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/ExecuteAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/ExecuteAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/LookDecision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/LookDecision.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/ScanDecision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/ScanDecision.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/StateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/StateController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/WalkaboutAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/WalkaboutAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AIWaypointNetwork.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AIWaypointNetwork.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Employee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Employee.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EmployeeFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EmployeeFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ListExtensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ListExtensions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectData/EmployeeData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObjectData/EmployeeData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectData/WaypointData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectData/WaypointData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Product.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Product.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProductData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProductData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WaypointFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WaypointFactory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BaseStats.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BaseStats.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ChracterClass.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ChracterClass.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectData.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectData/EmployeeData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectData/EmployeeData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectData/EmployeeRoster.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectData/EmployeeRoster.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,13 +67,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/ScanDecision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimateDoor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8645A79-B079-4E0E-9A2B-5BBFF081B88A/38/89af01f7/Camera.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectData/EmployeeRoster.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Printer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.1.4f1/Editor/Data/CGIncludes/AutoLight.cginc" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChracterClass.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -132,7 +111,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Searchables/WalkableFloor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/AttackAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/LookDecision.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/ChaseAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/State.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/ActiveStateDecision.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/PatrolAction.cs" />
@@ -140,14 +118,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Employee.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WaypointFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/ScanDecision.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/ExecuteAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectData/EmployeeData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EmployeeFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/WalkaboutAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/ComponentSorter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/ChaseAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/ScanDecision.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/StateController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/WalkaboutAction.cs" />
       </list>
     </option>
   </component>
@@ -205,7 +184,7 @@
       <workItem from="1606036497347" duration="1973000" />
       <workItem from="1606106990674" duration="1272000" />
       <workItem from="1606179893805" duration="11596000" />
-      <workItem from="1606200661141" duration="6657000" />
+      <workItem from="1606200661141" duration="10441000" />
     </task>
     <task id="LOCAL-00001" summary="created onscreenCV event and display signals">
       <created>1604018911152</created>
@@ -242,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606038421223</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="replaced employee prefab with an agent prefab">
+      <created>1606250914801</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606250914801</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,17 +253,19 @@
     <MESSAGE value="employee data is displayed on click" />
     <MESSAGE value="added a few packages for UI and Astar. Added AI logic" />
     <MESSAGE value="removed unused 3p assets. added scriptableAI code &amp; mousemovement. removed player" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed unused 3p assets. added scriptableAI code &amp; mousemovement. removed player" />
+    <MESSAGE value="replaced employee prefab with an agent prefab" />
+    <option name="LAST_COMMIT_MESSAGE" value="replaced employee prefab with an agent prefab" />
   </component>
   <component name="WindowStateProjectService">
     <state x="410" y="235" key="DiffContextDialog" timestamp="1606038330803">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
     <state x="410" y="235" key="DiffContextDialog/0.0.5120.1410@0.0.5120.1410" timestamp="1606038330803" />
-    <state x="1857" y="343" width="1218" height="947" key="Vcs.Push.Dialog.v2" timestamp="1606038431825">
-      <screen x="0" y="0" width="5120" height="1410" />
+    <state x="1857" y="350" width="1218" height="947" key="Vcs.Push.Dialog.v2" timestamp="1606250921610">
+      <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="1857" y="343" width="1218" height="947" key="Vcs.Push.Dialog.v2/0.0.5120.1410@0.0.5120.1410" timestamp="1606038431825" />
+    <state x="1857" y="350" key="Vcs.Push.Dialog.v2/0.0.5120.1440@0.0.5120.1440" timestamp="1606250921610" />
     <state x="3179" y="152" width="1069" height="1059" key="dock-window-1" timestamp="1606003408185">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>

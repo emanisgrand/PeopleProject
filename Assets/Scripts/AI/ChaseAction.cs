@@ -12,7 +12,7 @@ public class ChaseAction : Action
 
     private void Chase(StateController controller)
     {
-        controller.navMeshAgent.destination = controller.moveTarget.position;
-        controller.navMeshAgent.Resume();
+        // controller.navMeshAgent.destination = controller.moveTarget.position;
+        // controller.navMeshAgent.Resume();
     }
 }

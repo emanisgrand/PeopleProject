@@ -10,10 +10,11 @@ public class StateController : MonoBehaviour {
     public State currentState;
     public Transform eyes;
     public State remainState;
+    public GameObject gameManager;
     
     [HideInInspector] public EmployeeData Data;
-    [HideInInspector] public AIPath aiPAth; 
-    [HideInInspector] public NavMeshAgent navMeshAgent;
+    [HideInInspector] public AIDestinationSetter aiDestination;
+    [HideInInspector] public AIPath aiPath;
     [HideInInspector] public List<Transform> wayPointList;
     [HideInInspector] public int nextWayPoint;
     [HideInInspector] public Transform moveTarget;
@@ -26,10 +27,12 @@ public class StateController : MonoBehaviour {
     private bool aiActive;
 
 
-    void Awake () 
+    void Awake ()
     {
-        navMeshAgent = GetComponent<NavMeshAgent> ();
+        aiPath = GetComponent<AIPath>();
         Data = GetComponent<Employee>().EmployeeData;
+        aiDestination = GetComponent<AIDestinationSetter>();
+        wayPointList = gameManager.GetComponent<EmployeeFactory>().wayPoints;
     }
     
     public void SetupAI(bool aiActivationFromSystem, List<Transform> waypointsInOffice)
@@ -38,10 +41,10 @@ public class StateController : MonoBehaviour {
         aiActive = aiActivationFromSystem;
         if (aiActive) 
         {
-            navMeshAgent.enabled = true;
+            aiDestination.enabled = true;
         } else 
         {
-            navMeshAgent.enabled = false;
+            aiDestination.enabled = false;
         }
     }
 
