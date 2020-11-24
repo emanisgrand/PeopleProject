@@ -244,7 +244,6 @@
             <e p="Transition.cs" t="Include" />
             <e p="WalkaboutAction.cs" t="Include" />
           </e>
-          <e p="AIWaypointNetwork.cs" t="Include" />
           <e p="AnimateDoor.cs" t="Include" />
           <e p="BaseStats.cs" t="Include" />
           <e p="ChracterClass.cs" t="Include" />
@@ -252,22 +251,21 @@
           <e p="EmployeeFactory.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Interaction.cs" t="Include" />
-          <e p="ListExtensions.cs" t="Include" />
           <e p="MouseControlledMovement.cs" t="Include" />
           <e p="ObjectData" t="Include">
             <e p="EmployeeData.cs" t="Include" />
             <e p="EmployeeRoster.cs" t="Include" />
-            <e p="WaypointData.cs" t="Include" />
           </e>
           <e p="OfficeObject.cs" t="Include" />
           <e p="OnScreenCV.cs" t="Include" />
           <e p="Printer.cs" t="Include" />
-          <e p="Product.cs" t="Include" />
-          <e p="ProductData.cs" t="Include" />
           <e p="Searchables" t="Include">
             <e p="WalkableFloor.cs" t="Include" />
           </e>
-          <e p="WaypointFactory.cs" t="Include" />
+          <e p="Utils" t="Include">
+            <e p="ComponentSorter.cs" t="Include" />
+            <e p="ListExtensions.cs" t="Include" />
+          </e>
         </e>
         <e p="Surfaces" t="Include">
           <e p="Outline.shader" t="Include" />

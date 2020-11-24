@@ -41,7 +41,7 @@ public class Interaction : MonoBehaviour
                     OnClick3D?.Invoke(hit.collider.gameObject);
                     break;
                 }
-                
+                // deprecated
                 if (hit.collider.gameObject.GetComponent<WalkableFloor>() != null)
                 {
                     hitPoint = hit.point;

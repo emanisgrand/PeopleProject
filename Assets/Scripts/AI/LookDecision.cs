@@ -22,7 +22,7 @@ public class LookDecision : Decision
             if (Physics.SphereCast(controller.transform.position, 5f, controller.transform.forward,
                 out hit, 5f) && hit.collider.GetComponent<OfficeObject>().enabled)
             {
-                controller.chaseTarget = hit.transform;
+                controller.moveTarget = hit.transform;
                 return true;
             }
             else

@@ -7,13 +7,15 @@ public class WalkaboutAction : Action
 {
     public override void Act(StateController controller)
     {
-        Patrol(controller);
+        Walk(controller);
     }
 
-    private void Patrol(StateController controller)
+    private void Walk(StateController controller)
     {
         controller.navMeshAgent.destination = controller.wayPointList[controller.nextWayPoint].position;
+#pragma warning disable 618
         controller.navMeshAgent.Resume();
+#pragma warning restore 618
 
         if (controller.navMeshAgent.remainingDistance <= controller.navMeshAgent.stoppingDistance
             && !controller.navMeshAgent.pathPending)

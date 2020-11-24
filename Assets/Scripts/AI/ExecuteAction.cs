@@ -17,10 +17,10 @@ public class ExecuteAction : Action
         Debug.DrawRay(controller.eyes.position, controller.eyes.forward.normalized 
         * 5f, Color.red);
 
-        if (Physics.SphereCast(controller.eyes.position, 2.2f, controller.eyes.forward,
-            out hit, 5f) && hit.collider.GetComponent<OfficeObject>().enabled)
+        if (Physics.SphereCast(controller.eyes.position, controller.Data.lookSphereCastRadius, controller.eyes.forward,
+            out hit, controller.Data.visionDistance) && hit.collider.GetComponent<OfficeObject>().enabled)
         {
-            if (controller.CheckIfCountDownElapsed(controller.employee.EmployeeData.statFocus))
+            if (controller.CheckIfCountDownElapsed(controller.Data.actionRate))
             {
                 // todo: some kind of action 
                 Debug.Log("Execute Action! ");

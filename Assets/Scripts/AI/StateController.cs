@@ -1,20 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Pathfinding;
 using UnityEngine;
 using UnityEngine.AI;
 
+[RequireComponent(typeof(Employee))]
 public class StateController : MonoBehaviour {
 
     public State currentState;
-    public Employee employee;
     public Transform eyes;
     public State remainState;
-
+    
+    [HideInInspector] public EmployeeData Data;
+    [HideInInspector] public AIPath aiPAth; 
     [HideInInspector] public NavMeshAgent navMeshAgent;
     [HideInInspector] public List<Transform> wayPointList;
     [HideInInspector] public int nextWayPoint;
-    [HideInInspector] public Transform chaseTarget;
+    [HideInInspector] public Transform moveTarget;
     [HideInInspector] public float stateTimeElapsed;
+
+
+    
+    
 
     private bool aiActive;
 
@@ -22,9 +29,7 @@ public class StateController : MonoBehaviour {
     void Awake () 
     {
         navMeshAgent = GetComponent<NavMeshAgent> ();
-        employee = GetComponent<Employee>();
-        // testing before using AI Setup
-        
+        Data = GetComponent<Employee>().EmployeeData;
     }
     
     public void SetupAI(bool aiActivationFromSystem, List<Transform> waypointsInOffice)
@@ -48,11 +53,11 @@ public class StateController : MonoBehaviour {
     }
 
     void OnDrawGizmos()
-    {
+    {   
         if (currentState != null && eyes != null) 
         {
             Gizmos.color = currentState.sceneGizmoColor;
-            //Gizmos.DrawWireSphere(eyes.position, employee.EmployeeData.lookSphereCastRadius);
+            Gizmos.DrawWireSphere(eyes.position, 0.65f);
         }
     }
 

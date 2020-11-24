@@ -8,7 +8,7 @@ public class ActiveStateDecision : Decision
     public override bool Decide(StateController controller)
     {
         // deactivate if already in use.
-        bool chaseTargetIsActive = controller.chaseTarget.gameObject.activeSelf;
+        bool chaseTargetIsActive = controller.moveTarget.gameObject.activeSelf;
         return chaseTargetIsActive;
     }
 }

@@ -64,7 +64,6 @@ public class EmployeeFactory : MonoBehaviour
       for (int i = 0; i < n; i++)
       {
          GameObject obj = Instantiate(employeePrefab);
-         
          obj.transform.position = wayPoints[i].position;
       } 
    }

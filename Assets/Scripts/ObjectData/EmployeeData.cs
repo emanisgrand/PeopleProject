@@ -33,7 +33,13 @@ public class EmployeeData : ScriptableObject {
     }
 
     // radius for looksphere gizmo
-    public float lookSphereCastRadius = 0.5f;
+    public float lookSphereCastRadius = 2f;
+
+    // AI: vision distance
+    public float visionDistance = 2f;
+    
+    // AI: actionRate
+    public float actionRate = 0.5f;
     
     // npc STAT: focus
     public float statFocus = 100;
@@ -46,12 +52,11 @@ public class EmployeeData : ScriptableObject {
     
     // employee name
     public string EmployeeName;
-    // department
+    
     public DEPARTMENT Department;
-    // experience level
     public EXPERIENCE_LEVEL ExperienceLevel;
-    // gender
     public PRESENTS_AS Gender;
+    
     // image
     // public Sprite Icon;
     // todo: hat section
