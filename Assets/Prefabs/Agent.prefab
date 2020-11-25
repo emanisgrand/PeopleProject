@@ -178,7 +178,6 @@ GameObject:
   - component: {fileID: 6701601465710938514}
   - component: {fileID: 4937186379407878378}
   - component: {fileID: 6316036382486117998}
-  - component: {fileID: 429335291}
   m_Layer: 0
   m_Name: Agent
   m_TagString: Untagged
@@ -305,17 +304,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30e1162af1e0498419e8cbc1d25a97f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: {fileID: 11400000, guid: 5587a0c75abf94a4786de082e9b28fcb, type: 2}
   eyes: {fileID: 3542416396659312240}
   remainState: {fileID: 0}
+  currentState: {fileID: 11400000, guid: 5587a0c75abf94a4786de082e9b28fcb, type: 2}
   gameManager: {fileID: 7805471355430123194, guid: 31138d11ad0ec5b43bb475f3ed493f7b, type: 3}
-  Data: {fileID: 0}
-  aiDestination: {fileID: 0}
   aiPath: {fileID: 0}
-  wayPointList: []
   nextWayPoint: 0
+  Data: {fileID: 0}
   moveTarget: {fileID: 0}
   stateTimeElapsed: 0
+  wayPointList: []
+  aiDestination: {fileID: 0}
 --- !u!114 &4937186379407878378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,21 +356,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   employeeData: {fileID: 0}
---- !u!114 &429335291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4686064828938733802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f903c2eb621d8418d88f8dad81b13dc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mask:
-    serializedVersion: 2
-    m_Bits: 0
-  target: {fileID: 0}
-  onlyOnDoubleClick: 0
-  use2D: 0

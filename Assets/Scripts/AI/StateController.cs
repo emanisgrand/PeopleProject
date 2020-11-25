@@ -7,25 +7,20 @@ using UnityEngine.AI;
 [RequireComponent(typeof(Employee))]
 public class StateController : MonoBehaviour {
 
-    public State currentState;
     public Transform eyes;
     public State remainState;
+    public State currentState;
     public GameObject gameManager;
     
-    [HideInInspector] public EmployeeData Data;
-    [HideInInspector] public AIDestinationSetter aiDestination;
     [HideInInspector] public AIPath aiPath;
-    [HideInInspector] public List<Transform> wayPointList;
     [HideInInspector] public int nextWayPoint;
+    [HideInInspector] public EmployeeData Data;
     [HideInInspector] public Transform moveTarget;
     [HideInInspector] public float stateTimeElapsed;
-
-
+    [HideInInspector] public List<Transform> wayPointList;
+    [HideInInspector] public AIDestinationSetter aiDestination;
     
-    
-
     private bool aiActive;
-
 
     void Awake ()
     {
@@ -37,7 +32,7 @@ public class StateController : MonoBehaviour {
     
     public void SetupAI(bool aiActivationFromSystem, List<Transform> waypointsInOffice)
     {
-        wayPointList = waypointsInOffice;
+        //wayPointList = waypointsInOffice;
         aiActive = aiActivationFromSystem;
         if (aiActive) 
         {
@@ -50,6 +45,16 @@ public class StateController : MonoBehaviour {
 
     void Update()
     {
+        if (wayPointList != gameManager.GetComponent<EmployeeFactory>().wayPoints)
+        {
+            Debug.Log("no");
+            
+        }
+        else
+        {
+            Debug.Log(wayPointList);
+        }
+        
         if (!aiActive)
             return;
         currentState.UpdateState (this);

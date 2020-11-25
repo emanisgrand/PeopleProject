@@ -15,13 +15,15 @@ namespace Pathfinding {
 
     private void Walk(StateController controller)
     {
-        controller.aiDestination.target.position = controller.wayPointList[controller.nextWayPoint].position;
+        controller.aiDestination.target.position 
+            = controller.wayPointList[controller.nextWayPoint].position;
 
         
         if (controller.aiPath.remainingDistance <= 
             controller.aiPath.endReachedDistance && !controller.aiPath.pathPending)
         {
             controller.nextWayPoint = (controller.nextWayPoint + 1) % controller.wayPointList.Count;
+            controller.aiDestination.target = controller.wayPointList[controller.nextWayPoint];
         }
         
     }
