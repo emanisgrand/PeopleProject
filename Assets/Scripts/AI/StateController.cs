@@ -20,7 +20,7 @@ public class StateController : MonoBehaviour {
     [HideInInspector] public List<Transform> wayPointList;
     [HideInInspector] public AIDestinationSetter aiDestination;
     
-    private bool aiActive;
+    private bool aiActive;  
 
     void Awake ()
     {
