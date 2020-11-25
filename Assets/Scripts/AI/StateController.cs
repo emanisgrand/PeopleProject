@@ -24,7 +24,7 @@ public class StateController : MonoBehaviour {
 
     void Awake ()
     {
-        aiPath = GetComponent<AIPath>();
+        aiPath = GetComponent<AIPath>();  
         Data = GetComponent<Employee>().EmployeeData;
         aiDestination = GetComponent<AIDestinationSetter>();
         wayPointList = gameManager.GetComponent<EmployeeFactory>().wayPoints;
