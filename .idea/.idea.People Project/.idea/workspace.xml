@@ -169,7 +169,7 @@
       <workItem from="1606036497347" duration="1973000" />
       <workItem from="1606106990674" duration="1272000" />
       <workItem from="1606179893805" duration="11596000" />
-      <workItem from="1606200661141" duration="18638000" />
+      <workItem from="1606200661141" duration="19170000" />
     </task>
     <task id="LOCAL-00001" summary="created onscreenCV event and display signals">
       <created>1604018911152</created>
@@ -227,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606330379132</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="change layout to default">
+      <created>1606330917307</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606330917307</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +261,7 @@
     <MESSAGE value="removed unused 3p assets. added scriptableAI code &amp; mousemovement. removed player" />
     <MESSAGE value="replaced employee prefab with an agent prefab" />
     <MESSAGE value="replaced navmeshagent with astar agent" />
+    <MESSAGE value="relogged from plus acct to personal acct." />
     <MESSAGE value="change layout to default" />
     <option name="LAST_COMMIT_MESSAGE" value="change layout to default" />
   </component>
