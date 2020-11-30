@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public TeamStats teamStats;
     public GameTask myTask;
 
+    public GameTask myTime;
+
     public static GameManager instance;
 
     void Start()
@@ -117,4 +119,14 @@ public class GameManager : MonoBehaviour
 
 
     }
+}
+
+[System.Serializable]
+public class GameTime
+{
+    public int minutes,
+        hour,
+        dayOfWeek,
+        week,
+        quarter;
 }
