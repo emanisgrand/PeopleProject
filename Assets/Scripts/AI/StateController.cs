@@ -52,7 +52,7 @@ public class StateController : MonoBehaviour {
         }
         else
         {
-            Debug.Log(wayPointList);
+//            Debug.Log(wayPointList);
         }
         
         if (!aiActive)

@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public TeamStats teamStats;
     public GameTask myTask;
 
-    public GameTask myTime;
+    public GameTime myTime = new GameTime();
 
     public static GameManager instance;
 
