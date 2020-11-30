@@ -10,6 +10,7 @@ public class GameTask : ScriptableObject
     public SubTask halfHourTask, hourTask;
 }
 
+[System.Serializable]
 public class SubTask
 {
     public List<action> actions;
@@ -17,6 +18,7 @@ public class SubTask
         thresholdModifier;
 }
 
+[System.Serializable]
 public class action{
 
     public enum ActionType
