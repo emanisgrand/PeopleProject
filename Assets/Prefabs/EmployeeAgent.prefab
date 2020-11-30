@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 4937186379407878378}
   - component: {fileID: 6316036382486117998}
   m_Layer: 0
-  m_Name: Agent
+  m_Name: EmployeeAgent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -355,4 +355,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc9665bf51b96046bc40866bb361df1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myCanvas: {fileID: 0}
+  cvDataPanel: {fileID: 0}
   employeeData: {fileID: 0}
