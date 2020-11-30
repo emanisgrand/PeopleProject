@@ -61,10 +61,29 @@ public class GameManager : MonoBehaviour
         if(playerRoll >= threshhold)
         {
             Debug.Log("Success");
+            player.MaxFocus += subTask.levelUpStats.Focus;
+            player.Commitment += subTask.levelUpStats.Commitment;
+            player.Openness += subTask.levelUpStats.Openness;
+            player.Respect += subTask.levelUpStats.Respect;
+            player.Courage += subTask.levelUpStats.Courage;
+            teamStats.documentation += subTask.levelUpTeamStats.documentation;
+            teamStats.quality += subTask.levelUpTeamStats.quality;
+            teamStats.feedback += subTask.levelUpTeamStats.feedback;
         } else
         {
             Debug.Log("Failure");
+            player.MaxFocus -= subTask.levelDownStats.Focus;
+            player.Commitment -= subTask.levelDownStats.Commitment;
+            player.Openness -= subTask.levelDownStats.Openness;
+            player.Respect -= subTask.levelDownStats.Respect;
+            player.Courage -= subTask.levelDownStats.Courage;
+            teamStats.documentation -= subTask.levelDownTeamStats.documentation;
+            teamStats.quality -= subTask.levelDownTeamStats.quality;
+            teamStats.feedback -= subTask.levelDownTeamStats.feedback;
         }
+
+        player.Focus--;
+        myTime.incMinutes();
 
 
     }
@@ -111,12 +130,30 @@ public class GameManager : MonoBehaviour
         if (playerRoll >= threshhold)
         {
             Debug.Log("Success");
+            player.MaxFocus += subTask.levelUpStats.Focus;
+            player.Commitment += subTask.levelUpStats.Commitment;
+            player.Openness += subTask.levelUpStats.Openness;
+            player.Respect += subTask.levelUpStats.Respect;
+            player.Courage += subTask.levelUpStats.Courage;
+            teamStats.documentation += subTask.levelUpTeamStats.documentation;
+            teamStats.quality += subTask.levelUpTeamStats.quality;
+            teamStats.feedback += subTask.levelUpTeamStats.feedback;
         }
         else
         {
             Debug.Log("Failure");
+            player.MaxFocus -= subTask.levelDownStats.Focus;
+            player.Commitment -= subTask.levelDownStats.Commitment;
+            player.Openness -= subTask.levelDownStats.Openness;
+            player.Respect -= subTask.levelDownStats.Respect;
+            player.Courage -= subTask.levelDownStats.Courage;
+            teamStats.documentation -= subTask.levelDownTeamStats.documentation;
+            teamStats.quality -= subTask.levelDownTeamStats.quality;
+            teamStats.feedback -= subTask.levelDownTeamStats.feedback;
         }
 
+        player.Focus -= 2;
+        myTime.incHour();
 
     }
 }
@@ -124,9 +161,83 @@ public class GameManager : MonoBehaviour
 [System.Serializable]
 public class GameTime
 {
-    public int minutes,
-        hour,
+
+    //main time tracking variables
+    [Header("Game Time")]
+    public int minutes;
+        public int hour,
         dayOfWeek,
         week,
         quarter;
+
+    [Header("Extra Settings")]
+    //increase minutes by how much?
+    public int minuteIncrease = 30;
+
+    //main time limits
+    public int lastMinute,
+        startHour,
+        lastHour,
+        lastDayOfWeek,
+        lastWeek,
+        lastQuarter;
+
+    public void incMinutes()
+    {
+        minutes += minuteIncrease;
+
+        if(minutes < lastMinute)
+        {
+            minutes = 0;
+            incHour();
+        }
+    }
+
+    public void incHour()
+    {
+        if(hour < lastHour)
+        {
+            hour += 1;
+        } else
+        {
+            hour = startHour;
+            incDay();
+            minutes = 0;
+        }
+    }
+
+    public void incDay()
+    {
+        if(dayOfWeek < lastDayOfWeek)
+        {
+            dayOfWeek += 1;
+        } else
+        {
+            dayOfWeek = 1;
+            incWeek();
+        }
+    }
+
+    public void incWeek()
+    {
+        if(week < lastWeek)
+        {
+            week += 1;
+        } else
+        {
+            week = 1;
+            incQuarter();
+        }
+    }
+
+    public void incQuarter()
+    {
+        if (quarter < lastQuarter)
+        {
+            quarter += 1;
+        } else
+        {
+            //game finished, ending goes here.
+        }
+    }
 }

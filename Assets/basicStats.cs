@@ -6,12 +6,12 @@ using UnityEngine;
 public class basicStats
 {
 
-    public int Focus = 10,
-        maxFocus = 10,
-        Commitment = 1,
-        Openness = 1,
-        Respect = 1,
-        Courage = 1;
+    public int Focus,
+        MaxFocus,
+        Commitment,
+        Openness,
+        Respect,
+        Courage;
 
 
     public int getFocus()
@@ -37,5 +37,25 @@ public class basicStats
     public int getCourage()
     {
         return Courage;
+    }
+
+    public basicStats(int focus, int commitment, int openness, int respect, int courage)
+    {
+        MaxFocus = focus;
+        Commitment = commitment;
+        Openness = openness;
+        Respect = respect;
+        Courage = courage;
+        Focus = MaxFocus;
+    }
+
+    public basicStats()
+    {
+        MaxFocus = 10;
+        Commitment = 1;
+        Openness = 1;
+        Respect = 1;
+        Courage = 1;
+        Focus = MaxFocus;
     }
 }

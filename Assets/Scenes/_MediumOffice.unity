@@ -3081,7 +3081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   documentTasks:
-  - {fileID: 11400000, guid: 91b6db1c94cae4126b65f2063575a74c, type: 2}
+  - {fileID: 0}
   callMeetingTasks: []
   evaluateSelfTasks: []
   evaluatePromptedTasks: []
@@ -12982,7 +12982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player:
     Focus: 10
-    maxFocus: 10
+    MaxFocus: 10
     Commitment: 1
     Openness: 1
     Respect: 1
@@ -12994,10 +12994,17 @@ MonoBehaviour:
   myTask: {fileID: 0}
   myTime:
     minutes: 0
-    hour: 0
-    dayOfWeek: 0
-    week: 0
-    quarter: 0
+    hour: 9
+    dayOfWeek: 1
+    week: 1
+    quarter: 1
+    minuteIncrease: 30
+    lastMinute: 60
+    startHour: 9
+    lastHour: 17
+    lastDayOfWeek: 5
+    lastWeek: 4
+    lastQuarter: 4
 --- !u!1001 &903260041
 PrefabInstance:
   m_ObjectHideFlags: 0

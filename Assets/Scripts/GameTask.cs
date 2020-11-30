@@ -16,6 +16,9 @@ public class SubTask
     public List<action> actions;
     public int threshold,
         thresholdModifier;
+    public basicStats levelUpStats = new basicStats(0, 0, 0, 0, 0),
+        levelDownStats = new basicStats(0, 0, 0, 0, 0);
+    public TeamStats levelUpTeamStats, levelDownTeamStats;
 }
 
 [System.Serializable]
@@ -48,5 +51,7 @@ public PlayerAction playerAction;
 public TeamAction teamAction;
 
 }
+
+
 
 
