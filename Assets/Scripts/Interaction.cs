@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using System.Linq;
+using UnityEngine.UIElements;
 
 public class Interaction : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class Interaction : MonoBehaviour
 
         if (!EventSystem.current.IsPointerOverGameObject())
         {
+            
             RaycastHit[] hits;
             hits = Physics.RaycastAll(ray, 100f);
 
@@ -48,6 +50,7 @@ public class Interaction : MonoBehaviour
                     OnClick3D?.Invoke(hit.collider.gameObject);
                     break;
                 }
+
             }
         }
     }

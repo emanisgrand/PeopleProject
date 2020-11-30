@@ -14,6 +14,13 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
 
+    public List<TimeIcons> timeIcons;
+
+    private void Awake()
+    {
+        
+    }
+
     void Start()
     {
         if (instance == null)
@@ -60,7 +67,7 @@ public class GameManager : MonoBehaviour
 
         if(playerRoll >= threshhold)
         {
-            Debug.Log("Success");
+            Debug.Log("Success: " + playerRoll);
             player.MaxFocus += subTask.levelUpStats.Focus;
             player.Commitment += subTask.levelUpStats.Commitment;
             player.Openness += subTask.levelUpStats.Openness;
@@ -69,9 +76,8 @@ public class GameManager : MonoBehaviour
             teamStats.documentation += subTask.levelUpTeamStats.documentation;
             teamStats.quality += subTask.levelUpTeamStats.quality;
             teamStats.feedback += subTask.levelUpTeamStats.feedback;
-        } else
-        {
-            Debug.Log("Failure");
+        } else {
+            Debug.Log("Failure " + playerRoll);
             player.MaxFocus -= subTask.levelDownStats.Focus;
             player.Commitment -= subTask.levelDownStats.Commitment;
             player.Openness -= subTask.levelDownStats.Openness;
@@ -159,9 +165,8 @@ public class GameManager : MonoBehaviour
 }
 
 [System.Serializable]
-public class GameTime
+public class GameTime 
 {
-
     //main time tracking variables
     [Header("Game Time")]
     public int minutes;

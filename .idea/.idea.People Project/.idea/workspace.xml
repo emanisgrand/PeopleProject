@@ -20,9 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86e81f2c-5445-4e16-b7e2-df644cac3df6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Employee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Employee.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,35 +43,38 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/99/4749c027/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MouseControlledMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/AstarAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/WalkaboutAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Decision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Transition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/ActiveStateDecision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/LookDecision.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7A640F6C-B241-40B6-897C-AC910F849430/1f/c0c9ac42/IList`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Unity/UpWork/People Project/People Project/Assets/Prefabs/Agent.prefab.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EmployeeFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/ComponentSorter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Action.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/ChaseAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/StateController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/State.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/ScanDecision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/Unity/UpWork/People Project/People Project/Assets/Scenes/_MediumOffice.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FE84F4A7-54DA-4A6B-B64F-CA409D40938A/13/73edcb9f/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimateDoor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Unity/UpWork/People Project/People Project/Assets/Scripts/AI/StateController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8645A79-B079-4E0E-9A2B-5BBFF081B88A/38/89af01f7/Camera.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Printer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/Unity/UpWork/People Project/People Project/Assets/Scenes/_MediumOffice.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Unity/UpWork/People Project/People Project/Assets/Scripts/AI/StateController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.1.4f1/Editor/Data/CGIncludes/AutoLight.cginc" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Unity/UpWork/People Project/People Project/Assets/Scripts/AI/StateController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameTask.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Kata.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Listener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Employees/GretchenAlphabet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimateDoor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractiveObj.cs" />
@@ -99,7 +105,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Decision.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Action.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Printer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/AttackAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/LookDecision.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/State.cs" />
@@ -107,18 +112,20 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/PatrolAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/IdleWalkAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Employee.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WaypointFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/ExecuteAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectData/EmployeeData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EmployeeFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/ComponentSorter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/ChaseAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/ScanDecision.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Searchables/WalkableFloor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/WalkaboutAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/StateController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Employee.cs" />
       </list>
     </option>
   </component>

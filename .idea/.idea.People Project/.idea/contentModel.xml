@@ -7,6 +7,8 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="basicStats.cs" t="Include" />
+        <e p="ComputerTasks.cs" t="Include" />
         <e p="Imports" t="Include">
           <e p="AstarPathfindingProject" t="Include">
             <e p="AstarPathfindingProject.asmdef" t="Include" />
@@ -213,6 +215,7 @@
             </e>
           </e>
         </e>
+        <e p="PlayerManager.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Demigiant" t="Include">
             <e p="DOTween" t="Include">
@@ -229,14 +232,19 @@
             </e>
           </e>
         </e>
+        <e p="Prefabs" t="Include">
+          <e p="TeamStats.cs" t="Include" />
+        </e>
         <e p="RightClickNavigation.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AI" t="Include">
             <e p="Action.cs" t="Include" />
             <e p="ActiveStateDecision.cs" t="Include" />
+            <e p="AstarAI.cs" t="Include" />
             <e p="ChaseAction.cs" t="Include" />
             <e p="Decision.cs" t="Include" />
             <e p="ExecuteAction.cs" t="Include" />
+            <e p="Kata.cs" t="Include" />
             <e p="LookDecision.cs" t="Include" />
             <e p="ScanDecision.cs" t="Include" />
             <e p="State.cs" t="Include" />
@@ -252,6 +260,7 @@
           <e p="Employee.cs" t="Include" />
           <e p="EmployeeFactory.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="GameTask.cs" t="Include" />
           <e p="Interaction.cs" t="Include" />
           <e p="MouseControlledMovement.cs" t="Include" />
           <e p="OfficeObject.cs" t="Include" />
@@ -260,6 +269,7 @@
           <e p="Searchables" t="Include">
             <e p="WalkableFloor.cs" t="Include" />
           </e>
+          <e p="UI.cs" t="Include" />
           <e p="Utils" t="Include">
             <e p="ComponentSorter.cs" t="Include" />
             <e p="ListExtensions.cs" t="Include" />
@@ -268,6 +278,7 @@
         <e p="Surfaces" t="Include">
           <e p="Outline.shader" t="Include" />
         </e>
+        <e p="TimeIcons.cs" t="Include" />
       </e>
       <e p="AstarPathfindingProject.csproj" t="IncludeRecursive" />
       <e p="AstarPathfindingProjectEditor.csproj" t="IncludeRecursive" />
