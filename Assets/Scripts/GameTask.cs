@@ -1,22 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 
-[CreateAssetMenu(fileName = "GameTask", menuName = "Data/new Game Task", order = 55)]
+[CreateAssetMenu(fileName = "GameTask", menuName = "Data/New Game Task", order = 55)]
 public class GameTask : ScriptableObject
 {
-    SubTask halfHourTask, hourTask;
+    public SubTask halfHourTask, hourTask;
 }
 
 public class SubTask
 {
-    List<action> actions;
-    int threshold,
+    public List<action> actions;
+    public int threshold,
         thresholdModifier;
 }
 
-public class action(){
+public class action{
 
     public enum ActionType
     {

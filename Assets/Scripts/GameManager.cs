@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class GameManager : MonoBehaviour
 
     public void doHalfHourTask()
     {
-        Random.initState((int)System.DateTime.Now.Ticks);
+        Random.InitState((int)System.DateTime.Now.Ticks);
 
         SubTask subTask = myTask.halfHourTask;
 
@@ -31,27 +32,27 @@ public class GameManager : MonoBehaviour
 
         for(int i = 0; i < actions.Count; i++)
         {
-            if(actions[i].actionType == ActionType.playerAction)
+            if(actions[i].actionType == action.ActionType.playerAction)
             {
-                if (actions[i].playerAction == PlayerAction.Focus)
+                if (actions[i].playerAction == action.PlayerAction.Focus)
                     playerRoll += player.Focus;
-                else if (actions[i].playerAction == PlayerAction.Commitment)
+                else if (actions[i].playerAction == action.PlayerAction.Commitment)
                     playerRoll += player.Commitment;
-                else if (actions[i].playerAction == PlayerAction.Openness)
+                else if (actions[i].playerAction == action.PlayerAction.Openness)
                     playerRoll += player.Openness;
-                else if (actions[i].playerAction == PlayerAction.Respect)
+                else if (actions[i].playerAction == action.PlayerAction.Respect)
                     playerRoll += player.Respect;
-                else if (actions[i].playerAction == PlayerAction.Courage)
+                else if (actions[i].playerAction == action.PlayerAction.Courage)
                     playerRoll += player.Courage;
 
-            } else if (actions[i].actionType == ActionType.teamAction)
+            } else if (actions[i].actionType == action.ActionType.teamAction)
             {
-                if (actions[i].teamAction == TeamAction.Documentation)
-                    playerRoll += teamStats.Documentation;
-                else if (actions[i].teamAction == TeamAction.Quality)
-                    playerRoll += teamStats.Quality;
-                else if (actions[i].teamAction == TeamAction.Feedback)
-                    playerRoll += teamStats.Feedback;
+                if (actions[i].teamAction == action.TeamAction.Documentation)
+                    playerRoll += teamStats.documentation;
+                else if (actions[i].teamAction == action.TeamAction.Quality)
+                    playerRoll += teamStats.quality;
+                else if (actions[i].teamAction == action.TeamAction.Feedback)
+                    playerRoll += teamStats.feedback;
             }
         }
 
@@ -68,7 +69,7 @@ public class GameManager : MonoBehaviour
 
     public void doHourTask()
     {
-        Random.initState((int)System.DateTime.Now.Ticks);
+        Random.InitState((int)System.DateTime.Now.Ticks);
 
         SubTask subTask = myTask.hourTask;
 
@@ -80,28 +81,28 @@ public class GameManager : MonoBehaviour
 
         for (int i = 0; i < actions.Count; i++)
         {
-            if (actions[i].actionType == ActionType.playerAction)
+            if (actions[i].actionType == action.ActionType.playerAction)
             {
-                if (actions[i].playerAction == PlayerAction.Focus)
+                if (actions[i].playerAction == action.PlayerAction.Focus)
                     playerRoll += player.Focus;
-                else if (actions[i].playerAction == PlayerAction.Commitment)
+                else if (actions[i].playerAction == action.PlayerAction.Commitment)
                     playerRoll += player.Commitment;
-                else if (actions[i].playerAction == PlayerAction.Openness)
+                else if (actions[i].playerAction == action.PlayerAction.Openness)
                     playerRoll += player.Openness;
-                else if (actions[i].playerAction == PlayerAction.Respect)
+                else if (actions[i].playerAction == action.PlayerAction.Respect)
                     playerRoll += player.Respect;
-                else if (actions[i].playerAction == PlayerAction.Courage)
+                else if (actions[i].playerAction == action.PlayerAction.Courage)
                     playerRoll += player.Courage;
 
             }
-            else if (actions[i].actionType == ActionType.teamAction)
+            else if (actions[i].actionType == action.ActionType.teamAction)
             {
-                if (actions[i].teamAction == TeamAction.Documentation)
-                    playerRoll += teamStats.Documentation;
-                else if (actions[i].teamAction == TeamAction.Quality)
-                    playerRoll += teamStats.Quality;
-                else if (actions[i].teamAction == TeamAction.Feedback)
-                    playerRoll += teamStats.Feedback;
+                if (actions[i].teamAction == action.TeamAction.Documentation)
+                    playerRoll += teamStats.documentation;
+                else if (actions[i].teamAction == action.TeamAction.Quality)
+                    playerRoll += teamStats.quality;
+                else if (actions[i].teamAction == action.TeamAction.Feedback)
+                    playerRoll += teamStats.feedback;
             }
         }
 
