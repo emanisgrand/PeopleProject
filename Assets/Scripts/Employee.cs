@@ -4,7 +4,7 @@ using Object = UnityEngine.Object;
 
 public class Employee : MonoBehaviour
 {
-    public GameObject myCanvas, taskPanel, subTaskPanel;
+    public GameObject myCanvas, cvDataPanel;
     [SerializeField] private EmployeeData employeeData;
     public EmployeeData EmployeeData => employeeData;
 
@@ -12,7 +12,8 @@ public class Employee : MonoBehaviour
 
     void Awake()
     {
-        //todo: 1. get the UI panel from OnScreenCV
+        // todo: create ref to myCanvas & cvDataPanel
+        
 
         employeeData = EmployeeFactory.GetNextEmployee();
         gameObject.name = employeeData.name;

@@ -20,12 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86e81f2c-5445-4e16-b7e2-df644cac3df6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Employee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Employee.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +62,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8645A79-B079-4E0E-9A2B-5BBFF081B88A/38/89af01f7/Camera.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Printer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/Unity/UpWork/People Project/People Project/Assets/Scenes/_MediumOffice.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Unity/UpWork/People Project/People Project/Assets/Scenes/_MediumOffice.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" root0="FORCE_HIGHLIGHTING" />
@@ -79,7 +77,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimateDoor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractiveObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Surfaces/Outline.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/AiBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/AiDoNothing.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Product.cs" />
@@ -125,6 +122,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Employee.cs" />
       </list>
     </option>
@@ -276,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606331101983</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="adding advanced game system UI work">
+      <created>1606772020480</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1606772020480</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +311,8 @@
     <MESSAGE value="relogged from plus acct to personal acct." />
     <MESSAGE value="change layout to default" />
     <MESSAGE value="switched from plus acct to personal acct." />
-    <option name="LAST_COMMIT_MESSAGE" value="switched from plus acct to personal acct." />
+    <MESSAGE value="adding advanced game system UI work" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding advanced game system UI work" />
   </component>
   <component name="WindowStateProjectService">
     <state x="410" y="235" key="DiffContextDialog" timestamp="1606038330803">
@@ -321,11 +327,11 @@
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="401" y="475" key="MultipleFileMergeDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1606331053718" />
-    <state x="1857" y="350" width="1218" height="947" key="Vcs.Push.Dialog.v2" timestamp="1606331105580">
+    <state x="1857" y="350" width="1218" height="947" key="Vcs.Push.Dialog.v2" timestamp="1606772025876">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="1857" y="343" width="1218" height="947" key="Vcs.Push.Dialog.v2/0.0.5120.1410@0.0.5120.1410" timestamp="1606038431825" />
-    <state x="1857" y="350" key="Vcs.Push.Dialog.v2/0.0.5120.1440@0.0.5120.1440" timestamp="1606331105580" />
+    <state x="1857" y="350" key="Vcs.Push.Dialog.v2/0.0.5120.1440@0.0.5120.1440" timestamp="1606772025876" />
     <state x="3179" y="152" width="1069" height="1059" key="dock-window-1" timestamp="1606003408185">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
