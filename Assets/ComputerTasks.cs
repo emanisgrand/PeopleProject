@@ -31,7 +31,7 @@ public class ComputerTasks : MonoBehaviour
 
     public void documentation()
     {
- //       GameManager.instance.myTask = documentTasks[documentIndex];
+        GameManager.instance.myTask = documentTasks[documentIndex];
 
         if (documentIndex < documentTasks.Count - 1)
             documentIndex++;
@@ -41,25 +41,25 @@ public class ComputerTasks : MonoBehaviour
 
     public void callMeeting()
     {
- //       GameManager.instance.myTask = callMeetingTasks[callIndex];
+        GameManager.instance.myTask = callMeetingTasks[callIndex];
         callIndex++;
     }
 
     public void evaluateSelf()
     {
-//        GameManager.instance.myTask = evaluateSelfTasks[evaluateSelfIndex];
+        GameManager.instance.myTask = evaluateSelfTasks[evaluateSelfIndex];
         evaluateSelfIndex++;
     }
 
     public void evaluatePrompted()
     {
-//        GameManager.instance.myTask = evaluatePromptedTasks[evaluatePromptedIndex];
+        GameManager.instance.myTask = evaluatePromptedTasks[evaluatePromptedIndex];
         evaluatePromptedIndex++;
     }
 
     public void evaluateUnprompted()
     {
-//        GameManager.instance.myTask = evaluateUnpromptedTasks[evaluateUnpromptedIndex];
+        GameManager.instance.myTask = evaluateUnpromptedTasks[evaluateUnpromptedIndex];
         evaluateUnpromptedIndex++;
     }
 }
