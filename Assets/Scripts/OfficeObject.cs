@@ -15,6 +15,7 @@ public class OfficeObject : MonoBehaviour
       rend = GetComponent<Renderer>();
         if (transform.childCount > 0)
         {
+            
             myCanvas = transform.GetChild(0).gameObject;
             taskPanel = myCanvas.transform.GetChild(0).gameObject;
             subTaskPanel = myCanvas.transform.GetChild(1).gameObject;
