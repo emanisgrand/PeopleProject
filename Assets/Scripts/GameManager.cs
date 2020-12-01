@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
                 else if (actions[i].playerAction == action.PlayerAction.Commitment)
                     playerRoll += player.Commitment;
                 else if (actions[i].playerAction == action.PlayerAction.Openness)
-                    playerRoll += player.Openness;
+                    playerRoll += player.Transparency;
                 else if (actions[i].playerAction == action.PlayerAction.Respect)
                     playerRoll += player.Respect;
                 else if (actions[i].playerAction == action.PlayerAction.Courage)
@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Success: " + playerRoll);
             player.MaxFocus += subTask.levelUpStats.Focus;
             player.Commitment += subTask.levelUpStats.Commitment;
-            player.Openness += subTask.levelUpStats.Openness;
+            player.Transparency += subTask.levelUpStats.Transparency;
             player.Respect += subTask.levelUpStats.Respect;
             player.Courage += subTask.levelUpStats.Courage;
             teamStats.documentation += subTask.levelUpTeamStats.documentation;
@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Failure " + playerRoll);
             player.MaxFocus -= subTask.levelDownStats.Focus;
             player.Commitment -= subTask.levelDownStats.Commitment;
-            player.Openness -= subTask.levelDownStats.Openness;
+            player.Transparency -= subTask.levelDownStats.Transparency;
             player.Respect -= subTask.levelDownStats.Respect;
             player.Courage -= subTask.levelDownStats.Courage;
             teamStats.documentation -= subTask.levelDownTeamStats.documentation;
@@ -118,7 +118,7 @@ public class GameManager : MonoBehaviour
                 else if (actions[i].playerAction == action.PlayerAction.Commitment)
                     playerRoll += player.Commitment;
                 else if (actions[i].playerAction == action.PlayerAction.Openness)
-                    playerRoll += player.Openness;
+                    playerRoll += player.Transparency;
                 else if (actions[i].playerAction == action.PlayerAction.Respect)
                     playerRoll += player.Respect;
                 else if (actions[i].playerAction == action.PlayerAction.Courage)
@@ -143,7 +143,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Success: " + playerRoll);
             player.MaxFocus += subTask.levelUpStats.Focus;
             player.Commitment += subTask.levelUpStats.Commitment;
-            player.Openness += subTask.levelUpStats.Openness;
+            player.Transparency += subTask.levelUpStats.Transparency;
             player.Respect += subTask.levelUpStats.Respect;
             player.Courage += subTask.levelUpStats.Courage;
             teamStats.documentation += subTask.levelUpTeamStats.documentation;
@@ -156,7 +156,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Failure: " + playerRoll);
             player.MaxFocus -= subTask.levelDownStats.Focus;
             player.Commitment -= subTask.levelDownStats.Commitment;
-            player.Openness -= subTask.levelDownStats.Openness;
+            player.Transparency -= subTask.levelDownStats.Transparency;
             player.Respect -= subTask.levelDownStats.Respect;
             player.Courage -= subTask.levelDownStats.Courage;
             teamStats.documentation -= subTask.levelDownTeamStats.documentation;

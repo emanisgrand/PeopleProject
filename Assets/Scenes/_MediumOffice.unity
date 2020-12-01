@@ -4476,10 +4476,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36cab25a48f2ca84b823cab89a990f4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeIconContainer: {fileID: 0}
+  timeIconContainer: {fileID: 870699820}
   timeIcons: []
   timeSlider: {fileID: 530287807}
   sliderStepPoints: 100000000e000000090000000400000001000000
+  focusText: {fileID: 402374555}
+  courageText: {fileID: 1443787348}
+  commitmentText: {fileID: 1251355651}
+  transparencyText: {fileID: 511785244}
+  respectText: {fileID: 368603860}
+  feedbackText: {fileID: 1444843057}
+  qualityText: {fileID: 1947764521}
+  documentationText: {fileID: 364017530}
 --- !u!1001 &326227086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15008,7 +15016,7 @@ MonoBehaviour:
     Focus: 10
     MaxFocus: 10
     Commitment: 1
-    Openness: 1
+    Transparency: 1
     Respect: 1
     Courage: 1
   teamStats:
@@ -19170,7 +19178,6 @@ GameObject:
   - component: {fileID: 1194487003}
   - component: {fileID: 1194487005}
   - component: {fileID: 1194487004}
-  - component: {fileID: 1194487006}
   m_Layer: 5
   m_Name: GameStatsPanel
   m_TagString: Untagged
@@ -19237,22 +19244,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1194487002}
   m_CullTransparentMesh: 0
---- !u!114 &1194487006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1194487002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36cab25a48f2ca84b823cab89a990f4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeIconContainer: {fileID: 870699820}
-  timeIcons: []
-  timeSlider: {fileID: 0}
-  sliderStepPoints: 
 --- !u!1001 &1194847983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23454,7 +23445,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1430387875
 RectTransform:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class basicStats
     public int Focus,
         MaxFocus,
         Commitment,
-        Openness,
+        Transparency,
         Respect,
         Courage;
 
@@ -26,7 +26,7 @@ public class basicStats
 
     public int getOpenness()
     {
-        return Openness;
+        return Transparency;
     }
 
     public int getRespect()
@@ -39,11 +39,11 @@ public class basicStats
         return Courage;
     }
 
-    public basicStats(int focus, int commitment, int openness, int respect, int courage)
+    public basicStats(int focus, int commitment, int transparency, int respect, int courage)
     {
         MaxFocus = focus;
         Commitment = commitment;
-        Openness = openness;
+        Transparency = transparency;
         Respect = respect;
         Courage = courage;
         Focus = MaxFocus;
@@ -53,7 +53,7 @@ public class basicStats
     {
         MaxFocus = 10;
         Commitment = 1;
-        Openness = 1;
+        Transparency = 1;
         Respect = 1;
         Courage = 1;
         Focus = MaxFocus;
