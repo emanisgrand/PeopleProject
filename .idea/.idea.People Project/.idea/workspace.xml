@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86e81f2c-5445-4e16-b7e2-df644cac3df6" name="Default Changelist" comment="" />
+    <list default="true" id="86e81f2c-5445-4e16-b7e2-df644cac3df6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +53,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/ChaseAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/StateController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/State.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Unity/UpWork/People Project/People Project/Assets/Scenes/_MediumOffice.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/ScanDecision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/Unity/UpWork/People Project/People Project/Assets/Scenes/_MediumOffice.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FE84F4A7-54DA-4A6B-B64F-CA409D40938A/13/73edcb9f/Transform.cs" root0="SKIP_HIGHLIGHTING" />
@@ -116,10 +119,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/WalkaboutAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/StateController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Employee.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       </list>
     </option>
   </component>

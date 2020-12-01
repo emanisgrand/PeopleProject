@@ -227,7 +227,7 @@ public class GameTime
     {
         if(week < lastWeek)
         {
-            week += 1;
+            week += 1; 
         } else
         {
             week = 1;
