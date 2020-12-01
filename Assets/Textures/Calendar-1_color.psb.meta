@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 817e8039b9a2c304c9258c6c2d4d7d18
+guid: 57323d2c70af4f04f910761b67a9d5c2
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -100,7 +100,7 @@ ScriptedImporter:
       y: 4
       width: 750
       height: 602
-    spriteID: 13497ee389267324b80ddc8e3c6d0467
+    spriteID: 40fb2493e3f77a8439aa52a3df7ce199
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -111,6 +111,50 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
+  - name: dateBlock white
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 4
+      width: 64
+      height: 64
+    spriteID: eaebf822ea9a1ce4c9720a6d07cef019
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 666, y: -342}
+  - name: dateBlock
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 76
+      width: 64
+      height: 64
+    spriteID: 25ac5005dc5155c448d725dcac7db41f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 666, y: -270}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
@@ -134,23 +178,37 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 00000000000000000000000000000000
+    spriteID: 
     layerID: 18
     mosaicPosition: {x: 0, y: 0}
   - name: calendar
     spriteName: calendar
     isGroup: 0
     parentIndex: 0
-    spriteID: 13497ee389267324b80ddc8e3c6d0467
+    spriteID: 40fb2493e3f77a8439aa52a3df7ce199
     layerID: 11
     mosaicPosition: {x: 4, y: 4}
+  - name: dateBlock white
+    spriteName: dateBlock white
+    isGroup: 0
+    parentIndex: 0
+    spriteID: eaebf822ea9a1ce4c9720a6d07cef019
+    layerID: 45
+    mosaicPosition: {x: 762, y: 4}
+  - name: dateBlock
+    spriteName: dateBlock
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 25ac5005dc5155c448d725dcac7db41f
+    layerID: 13
+    mosaicPosition: {x: 762, y: 76}
   characterData:
     bones: []
     parts: []
     dimension: {x: 0, y: 0}
     characterGroups: []
   generateGOHierarchy: 0
-  textureAssetName: Calendar-1 Texture
-  prefabAssetName: Calendar-1 Prefab
-  spriteLibAssetName: Calendar-1 Sprite Lib
+  textureAssetName: Calendar-1_color Texture
+  prefabAssetName: Calendar-1_color Prefab
+  spriteLibAssetName: Calendar-1_color Sprite Lib
   secondarySpriteTextures: []
