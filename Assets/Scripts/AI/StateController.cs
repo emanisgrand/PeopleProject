@@ -57,16 +57,6 @@ public class StateController : MonoBehaviour {
 
     void Update()
     {
-        if (wayPointList != gameManager.GetComponent<EmployeeFactory>().wayPoints)
-        {
-            Debug.Log("no");
-            
-        }
-        else
-        {
-//            Debug.Log(wayPointList);
-        }
-        
         if (!aiActive)
             return;
         currentState.UpdateState (this);
