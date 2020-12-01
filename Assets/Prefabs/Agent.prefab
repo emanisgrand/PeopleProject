@@ -174,7 +174,6 @@ GameObject:
   - component: {fileID: -6501886166416286600}
   - component: {fileID: -1966162893040512355}
   - component: {fileID: 7656312972769103876}
-  - component: {fileID: 4569258204561536818}
   - component: {fileID: 6701601465710938514}
   - component: {fileID: 4937186379407878378}
   - component: {fileID: 6316036382486117998}
@@ -274,24 +273,6 @@ MonoBehaviour:
   raycastOffset: {x: 0, y: 0, z: 0}
   useGraphRaycasting: 0
   quality: 1
---- !u!114 &4569258204561536818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4686064828938733802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f903c2eb621d8418d88f8dad81b13dc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mask:
-    serializedVersion: 2
-    m_Bits: 0
-  target: {fileID: 0}
-  onlyOnDoubleClick: 0
-  use2D: 0
 --- !u!114 &6701601465710938514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,8 +286,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eyes: {fileID: 3542416396659312240}
-  remainState: {fileID: 0}
-  currentState: {fileID: 11400000, guid: 5587a0c75abf94a4786de082e9b28fcb, type: 2}
+  remainState: {fileID: 11400000, guid: 5587a0c75abf94a4786de082e9b28fcb, type: 2}
+  currentState: {fileID: 11400000, guid: 70c666e83439d8c4ebad074e002133c5, type: 2}
   gameManager: {fileID: 7805471355430123194, guid: 31138d11ad0ec5b43bb475f3ed493f7b, type: 3}
   aiPath: {fileID: 0}
   nextWayPoint: 0
@@ -355,4 +336,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc9665bf51b96046bc40866bb361df1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myCanvas: {fileID: 0}
+  cvDataPanel: {fileID: 0}
   employeeData: {fileID: 0}

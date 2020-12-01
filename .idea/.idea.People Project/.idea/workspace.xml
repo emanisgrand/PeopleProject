@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86e81f2c-5445-4e16-b7e2-df644cac3df6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Agent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Agent.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/WalkaboutAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/WalkaboutAction.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,13 +119,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/ChaseAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/ScanDecision.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Searchables/WalkableFloor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/WalkaboutAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/StateController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Employee.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/WalkaboutAction.cs" />
       </list>
     </option>
   </component>

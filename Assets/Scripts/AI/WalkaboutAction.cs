@@ -7,7 +7,8 @@ using UnityEngine;
 namespace Pathfinding {
 [CreateAssetMenu(menuName = "Scriptable AI/New Action/Walkabout")]
     public class WalkaboutAction : Action
-{
+    {
+        Transform randomTransform;
     public override void Act(StateController controller)
     {
         Walk(controller);
@@ -15,10 +16,14 @@ namespace Pathfinding {
 
     private void Walk(StateController controller)
     {
-        controller.aiDestination.target.position 
-            = controller.wayPointList[controller.nextWayPoint].position;
+        randomTransform = FindObjectOfType<Transform>();
+        controller.aiDestination.target
+            = randomTransform;
 
-        
+        Debug.Log(controller.aiDestination.target);
+
+
+
         if (controller.aiPath.remainingDistance <= 
             controller.aiPath.endReachedDistance && !controller.aiPath.pathPending)
         {
