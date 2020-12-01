@@ -22,8 +22,14 @@
     <list default="true" id="86e81f2c-5445-4e16-b7e2-df644cac3df6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Agent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Agent.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Agent.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Agent.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EmployeeAgent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EmployeeAgent.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/StateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/StateController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/WalkaboutAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/WalkaboutAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Employee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Employee.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +45,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/Unity/UpWork/People Project/People Project/Assets/Prefabs/Agent.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/99/4749c027/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MouseControlledMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/AstarAI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -70,6 +77,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.1.4f1/Editor/Data/CGIncludes/AutoLight.cginc" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameTask.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Unity/UpWork/People Project/People Project/Assets/Scripts/AI/StateController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Kata.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -119,13 +127,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/ChaseAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/ScanDecision.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Searchables/WalkableFloor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/StateController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Employee.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/WalkaboutAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/StateController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Employee.cs" />
       </list>
     </option>
   </component>
@@ -297,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606786591250</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="removed target mover script from agent prefab">
+      <created>1606849752988</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1606849752988</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +345,8 @@
     <MESSAGE value="adding advanced game system UI work" />
     <MESSAGE value="imported TMP Essentials asset" />
     <MESSAGE value="changed time unit color to white" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed time unit color to white" />
+    <MESSAGE value="removed target mover script from agent prefab" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed target mover script from agent prefab" />
   </component>
   <component name="WindowStateProjectService">
     <state x="410" y="235" key="DiffContextDialog" timestamp="1606038330803">
@@ -345,11 +361,11 @@
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="401" y="475" key="MultipleFileMergeDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1606331053718" />
-    <state x="1857" y="350" width="1218" height="947" key="Vcs.Push.Dialog.v2" timestamp="1606786593954">
+    <state x="1857" y="350" width="1218" height="947" key="Vcs.Push.Dialog.v2" timestamp="1606849754441">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="1857" y="343" width="1218" height="947" key="Vcs.Push.Dialog.v2/0.0.5120.1410@0.0.5120.1410" timestamp="1606038431825" />
-    <state x="1857" y="350" key="Vcs.Push.Dialog.v2/0.0.5120.1440@0.0.5120.1440" timestamp="1606786593954" />
+    <state x="1857" y="350" key="Vcs.Push.Dialog.v2/0.0.5120.1440@0.0.5120.1440" timestamp="1606849754441" />
     <state x="3179" y="152" width="1069" height="1059" key="dock-window-1" timestamp="1606003408185">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>

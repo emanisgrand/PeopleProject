@@ -1,29 +1,35 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Pathfinding;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Pathfinding {
+namespace AI {
 [CreateAssetMenu(menuName = "Scriptable AI/New Action/Walkabout")]
     public class WalkaboutAction : Action
     {
-        Transform randomTransform;
-    public override void Act(StateController controller)
+        private GameManager _gameManager;
+        public override void Act(StateController controller)
     {
         Walk(controller);
     }
 
     private void Walk(StateController controller)
     {
-        randomTransform = FindObjectOfType<Transform>();
-        controller.aiDestination.target
-            = randomTransform;
+        Debug.Log("walk action happening.");
+        _gameManager = GameManager.instance;
 
-        Debug.Log(controller.aiDestination.target);
-
-
-
+        // this is only a test.
+        controller.aiDestination.target =
+            _gameManager.GetComponent<EmployeeFactory>().wayPoints[controller.nextWayPoint];
+        
+        
+        if (controller.wayPointList != null)
+        {
+            controller.aiDestination.target = controller.wayPointList[controller.nextWayPoint];
+        }
+        else
+        {
+            Debug.Log("Waypoints empty. Check reference.");
+        }
+        
+            
         if (controller.aiPath.remainingDistance <= 
             controller.aiPath.endReachedDistance && !controller.aiPath.pathPending)
         {

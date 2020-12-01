@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public List<TimeIcon> timeIcons;
-
+    public List<Transform> OfficeWayPoints;
     private void Awake()
     {
         

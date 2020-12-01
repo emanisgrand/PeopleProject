@@ -12,9 +12,7 @@ public class Employee : MonoBehaviour
 
     void Awake()
     {
-        // todo: create ref to myCanvas & cvDataPanel
         
-
         employeeData = EmployeeFactory.GetNextEmployee();
         gameObject.name = employeeData.name;
         Interaction.OnClick3D += Interaction_OnClick3D;

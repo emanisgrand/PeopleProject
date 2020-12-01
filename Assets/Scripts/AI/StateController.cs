@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Pathfinding;
 using UnityEngine;
 using UnityEngine.AI;
+using Pathfinding;
 
 [RequireComponent(typeof(Employee))]
 public class StateController : MonoBehaviour {
@@ -10,16 +11,20 @@ public class StateController : MonoBehaviour {
     public Transform eyes;
     public State remainState;
     public State currentState;
+    
+    // todo: test if this should be in the employee
     public GameObject gameManager;
     
-    [HideInInspector] public AIPath aiPath;
+    
     [HideInInspector] public int nextWayPoint;
+    [HideInInspector] public float stateTimeElapsed;
+    
     [HideInInspector] public EmployeeData Data;
     [HideInInspector] public Transform moveTarget;
-    [HideInInspector] public float stateTimeElapsed;
     [HideInInspector] public List<Transform> wayPointList;
-    [HideInInspector] public AIDestinationSetter aiDestination;
     
+    [HideInInspector] public AIDestinationSetter aiDestination;
+    [HideInInspector] public AIPath aiPath;
     private bool aiActive;   
 
     void Awake ()
@@ -27,12 +32,19 @@ public class StateController : MonoBehaviour {
         aiPath = GetComponent<AIPath>();  
         Data = GetComponent<Employee>().EmployeeData;
         aiDestination = GetComponent<AIDestinationSetter>();
-        wayPointList = gameManager.GetComponent<EmployeeFactory>().wayPoints;
+
+        // test game manager component 
+        if (gameManager != null) { return; } else { Debug.Log("Employee's Game Manager is empty."); }
+        
+        if (wayPointList == null)
+        {
+            wayPointList = gameManager.GetComponent<EmployeeFactory>().wayPoints;
+        }
     }
+    
     
     public void SetupAI(bool aiActivationFromSystem, List<Transform> waypointsInOffice)
     {
-        //wayPointList = waypointsInOffice;
         aiActive = aiActivationFromSystem;
         if (aiActive) 
         {
