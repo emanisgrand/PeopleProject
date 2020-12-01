@@ -2,15 +2,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class UI : MonoBehaviour
 {
     // grab the list of time icons
     public GameObject timeIconContainer; //container for the time unit icons
     public List<TimeIcon> timeIcons; //list to store all the time icons in.
-
+    public Slider timeSlider;
     public static UI instance;
+
+    public int[] sliderStepPoints;
 
     public int timeIconIndex {
         get
@@ -45,5 +47,25 @@ public class UI : MonoBehaviour
     {
 
         timeIcons[timeIconIndex].updateIcon(status);
+    }
+
+    public void updateTimeSlider()
+    {
+        for(int i = 0; i < sliderStepPoints.Length; i++)
+        {
+            if(GameManager.instance.myTime.timeUnits > 0 && GameManager.instance.myTime.timeUnits < sliderStepPoints[i])
+            {
+                timeSlider.value = i;
+            } else if (GameManager.instance.myTime.timeUnits <= 0)
+            {
+                timeSlider.value = sliderStepPoints.Length - 1;
+                break;
+            }
+        }
+    }
+
+    void Update()
+    {
+        updateTimeSlider();
     }
 }
