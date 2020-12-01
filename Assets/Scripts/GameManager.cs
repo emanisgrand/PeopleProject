@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
 
-    public List<TimeIcons> timeIcons;
+    public List<TimeIcon> timeIcons;
 
     private void Awake()
     {
@@ -65,6 +65,8 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        timeUnitCheck timeCheck = new timeUnitCheck(timeUnitCheck.timeUnitStatus.none);
+
         if(playerRoll >= threshhold)
         {
             Debug.Log("Success: " + playerRoll);
@@ -76,6 +78,7 @@ public class GameManager : MonoBehaviour
             teamStats.documentation += subTask.levelUpTeamStats.documentation;
             teamStats.quality += subTask.levelUpTeamStats.quality;
             teamStats.feedback += subTask.levelUpTeamStats.feedback;
+            timeCheck.myStatus = timeUnitCheck.timeUnitStatus.success;
         } else {
             Debug.Log("Failure " + playerRoll);
             player.MaxFocus -= subTask.levelDownStats.Focus;
@@ -86,10 +89,10 @@ public class GameManager : MonoBehaviour
             teamStats.documentation -= subTask.levelDownTeamStats.documentation;
             teamStats.quality -= subTask.levelDownTeamStats.quality;
             teamStats.feedback -= subTask.levelDownTeamStats.feedback;
+            timeCheck.myStatus = timeUnitCheck.timeUnitStatus.failure;
         }
 
-        player.Focus--;
-        myTime.incMinutes();
+        myTime.decTimeUnit(timeCheck);
 
 
     }
@@ -133,9 +136,11 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        timeUnitCheck timeCheck = new timeUnitCheck(timeUnitCheck.timeUnitStatus.none);
+
         if (playerRoll >= threshhold)
         {
-            Debug.Log("Success");
+            Debug.Log("Success: " + playerRoll);
             player.MaxFocus += subTask.levelUpStats.Focus;
             player.Commitment += subTask.levelUpStats.Commitment;
             player.Openness += subTask.levelUpStats.Openness;
@@ -144,10 +149,11 @@ public class GameManager : MonoBehaviour
             teamStats.documentation += subTask.levelUpTeamStats.documentation;
             teamStats.quality += subTask.levelUpTeamStats.quality;
             teamStats.feedback += subTask.levelUpTeamStats.feedback;
+            timeCheck.myStatus = timeUnitCheck.timeUnitStatus.success;
         }
         else
         {
-            Debug.Log("Failure");
+            Debug.Log("Failure: " + playerRoll);
             player.MaxFocus -= subTask.levelDownStats.Focus;
             player.Commitment -= subTask.levelDownStats.Commitment;
             player.Openness -= subTask.levelDownStats.Openness;
@@ -156,22 +162,24 @@ public class GameManager : MonoBehaviour
             teamStats.documentation -= subTask.levelDownTeamStats.documentation;
             teamStats.quality -= subTask.levelDownTeamStats.quality;
             teamStats.feedback -= subTask.levelDownTeamStats.feedback;
+            timeCheck.myStatus = timeUnitCheck.timeUnitStatus.failure;
         }
 
-        player.Focus -= 2;
-        myTime.incHour();
+        myTime.decTwoTimeUnits(timeCheck);
 
     }
 }
 
+
+
+//Main class for keeping track of current game time.
 [System.Serializable]
 public class GameTime 
 {
     //main time tracking variables
     [Header("Game Time")]
-    public int minutes;
-        public int hour,
-        dayOfWeek,
+    public int timeUnits = 16;
+        public int dayOfWeek,
         week,
         quarter;
 
@@ -180,37 +188,46 @@ public class GameTime
     public int minuteIncrease = 30;
 
     //main time limits
-    public int lastMinute,
-        startHour,
-        lastHour,
-        lastDayOfWeek,
-        lastWeek,
-        lastQuarter;
+    public int startUnits, //the amount of time units at the beginning of the day.
+        lastDayOfWeek, //when's the last day of the week?
+        lastWeek, //when's the last week of the quarter?
+        lastQuarter; //when's the final quarter?
 
-    public void incMinutes()
+    //main function for decreasing current time units.
+    public void decTimeUnit(timeUnitCheck status)
     {
-        minutes += minuteIncrease;
 
-        if(minutes < lastMinute)
-        {
-            minutes = 0;
-            incHour();
-        }
-    }
+        UI.instance.updateTimeIcon(status.myStatus);
 
-    public void incHour()
-    {
-        if(hour < lastHour)
+        timeUnits -= 1;
+
+        if (timeUnits < 1)
         {
-            hour += 1;
-        } else
-        {
-            hour = startHour;
+            timeUnits = 0;
             incDay();
-            minutes = 0;
         }
     }
 
+    public void decTwoTimeUnits( timeUnitCheck status)
+    {
+
+        UI.instance.updateTimeIcon(timeUnitCheck.timeUnitStatus.consumed);
+
+        timeUnits -= 1;
+
+        UI.instance.updateTimeIcon(status.myStatus);
+
+        timeUnits -= 1;
+
+        if (timeUnits < 1)
+        {
+            timeUnits = 0;
+            incDay();
+        }
+    }
+
+    
+    //main function for increasing the day of the week.
     public void incDay()
     {
         if(dayOfWeek < lastDayOfWeek)
@@ -223,6 +240,7 @@ public class GameTime
         }
     }
 
+    //main function for increasing week of the current quarter.
     public void incWeek()
     {
         if(week < lastWeek)
@@ -235,6 +253,7 @@ public class GameTime
         }
     }
 
+    //function for increasing the quarter.
     public void incQuarter()
     {
         if (quarter < lastQuarter)
@@ -245,4 +264,64 @@ public class GameTime
             //game finished, ending goes here.
         }
     }
+}
+
+
+//main classes for checking success or failure
+//in certain all units of time.
+[System.Serializable]
+public class timeUnitCheck
+{
+    public enum timeUnitStatus
+    {
+        none,
+        consumed,
+        success,
+        failure
+    };
+
+    public timeUnitCheck(timeUnitCheck.timeUnitStatus status)
+    {
+        myStatus = status;
+    }
+
+    public timeUnitStatus myStatus;
+}
+
+[System.Serializable]
+public class dayCheck
+{
+    public enum dayStatus
+    {
+        none,
+        success,
+        failure
+    }
+
+    public dayStatus myStatus;
+    public List<timeUnitCheck> myTimeUnits;
+}
+
+[System.Serializable]
+public class weekCheck
+{
+    public enum weekStatus
+    {
+        none, success, failure
+    };
+
+    public weekStatus myStatus;
+    public List<dayCheck> myDays;
+}
+
+[System.Serializable]
+public class quarterCheck
+{
+    public enum quarterStatus
+    {
+        none, success, failure
+    };
+
+    public quarterStatus myStatus;
+    public List<weekCheck> myWeeks;
 }
