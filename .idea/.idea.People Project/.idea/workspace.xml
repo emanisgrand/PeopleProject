@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86e81f2c-5445-4e16-b7e2-df644cac3df6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606773426257</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="changed time unit color to white">
+      <created>1606786591250</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1606786591250</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +327,8 @@
     <MESSAGE value="switched from plus acct to personal acct." />
     <MESSAGE value="adding advanced game system UI work" />
     <MESSAGE value="imported TMP Essentials asset" />
-    <option name="LAST_COMMIT_MESSAGE" value="imported TMP Essentials asset" />
+    <MESSAGE value="changed time unit color to white" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed time unit color to white" />
   </component>
   <component name="WindowStateProjectService">
     <state x="410" y="235" key="DiffContextDialog" timestamp="1606038330803">
@@ -334,11 +343,11 @@
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="401" y="475" key="MultipleFileMergeDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1606331053718" />
-    <state x="1857" y="350" width="1218" height="947" key="Vcs.Push.Dialog.v2" timestamp="1606773430631">
+    <state x="1857" y="350" width="1218" height="947" key="Vcs.Push.Dialog.v2" timestamp="1606786593954">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="1857" y="343" width="1218" height="947" key="Vcs.Push.Dialog.v2/0.0.5120.1410@0.0.5120.1410" timestamp="1606038431825" />
-    <state x="1857" y="350" key="Vcs.Push.Dialog.v2/0.0.5120.1440@0.0.5120.1440" timestamp="1606773430631" />
+    <state x="1857" y="350" key="Vcs.Push.Dialog.v2/0.0.5120.1440@0.0.5120.1440" timestamp="1606786593954" />
     <state x="3179" y="152" width="1069" height="1059" key="dock-window-1" timestamp="1606003408185">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
