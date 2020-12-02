@@ -58,6 +58,11 @@ public class basicStats
         Transparency = transparency;
         Respect = respect;
         Courage = courage;
+        FocusLevel = 1;
+        CommitmentLevel = 1;
+        RespectLevel = 1;
+        TransparencyLevel = 1;
+        CourageLevel = 1;
     }
 
     public basicStats()
@@ -67,5 +72,10 @@ public class basicStats
         Respect = 1;
         Courage = 1;
         Focus = 1;
+        FocusLevel = 1;
+        CommitmentLevel = 1;
+        RespectLevel = 1;
+        TransparencyLevel = 1;
+        CourageLevel = 1;
     }
 }

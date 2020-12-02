@@ -16793,11 +16793,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player:
     Focus: 10
-    MaxFocus: 10
     Commitment: 1
     Transparency: 1
     Respect: 1
     Courage: 1
+    FocusLevel: 1
+    CommitmentLevel: 1
+    TransparencyLevel: 1
+    RespectLevel: 1
+    CourageLevel: 1
+    FocusLevelPoints: 
+    CommitmentLevelPoints: 
+    TransparencyLevelPoints: 
+    RespectLevelPoints: 
+    CourageLevelPoints: 
+    CurrentFocus: 100
+    MaxFocus: 100
   teamStats:
     documentation: 1
     quality: 1
