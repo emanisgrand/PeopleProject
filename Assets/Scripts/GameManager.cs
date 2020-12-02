@@ -188,10 +188,10 @@ public class GameTime
     public int minuteIncrease = 30;
 
     //main time limits
-    public int startUnits, //the amount of time units at the beginning of the day.
-        lastDayOfWeek, //when's the last day of the week?
-        lastWeek, //when's the last week of the quarter?
-        lastQuarter; //when's the final quarter?
+    public int startUnits,    //the amount of time units at the beginning of the day.
+        lastDayOfWeek,        //when's the last day of the week?
+        lastWeek,             //when's the last week of the quarter?
+        lastQuarter;          //when's the final quarter?
 
     //main function for decreasing current time units.
     public void decTimeUnit(timeUnitCheck status)

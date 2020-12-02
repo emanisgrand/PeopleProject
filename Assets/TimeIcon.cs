@@ -14,12 +14,6 @@ public class TimeIcon : MonoBehaviour
         myImage = GetComponent<Image>(); //get the image component upon start.
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void updateIcon(timeUnitCheck.timeUnitStatus status){
 
         if(status == timeUnitCheck.timeUnitStatus.success){

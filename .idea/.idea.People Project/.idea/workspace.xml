@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86e81f2c-5445-4e16-b7e2-df644cac3df6" name="Default Changelist" comment="" />
+    <list default="true" id="86e81f2c-5445-4e16-b7e2-df644cac3df6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.People Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_MediumOffice.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TimeIcon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TimeIcon.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +42,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://D:/Unity/UpWork/People Project/People Project/Assets/Prefabs/Agent.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/99/4749c027/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Unity/UpWork/People Project/People Project/Assets/Scenes/_MediumOffice.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MouseControlledMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/AstarAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/WalkaboutAction.cs" root0="FORCE_HIGHLIGHTING" />
@@ -67,6 +74,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/Unity/UpWork/People Project/People Project/Assets/Scenes/_MediumOffice.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FakeCameraEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.1.4f1/Editor/Data/CGIncludes/AutoLight.cginc" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameTask.cs" root0="FORCE_HIGHLIGHTING" />
@@ -76,8 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Employees/GretchenAlphabet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimateDoor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractiveObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Surfaces/Outline.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/AiBehavior.cs" />
@@ -124,9 +130,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/WalkaboutAction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Employee.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/StateController.cs" />
+        <option value="$PROJECT_DIR$/Assets/TimeIcon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/FakeCameraEvent.cs" />
       </list>
     </option>
   </component>
@@ -333,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606865621290</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="another update to EOQ calendar UI">
+      <created>1606866625371</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1606866625371</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,7 +386,8 @@
     <MESSAGE value="added focus bar UI and quarter tracker" />
     <MESSAGE value="Adding EOQ calendar UI" />
     <MESSAGE value="updated EOQ calendar UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated EOQ calendar UI" />
+    <MESSAGE value="another update to EOQ calendar UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="another update to EOQ calendar UI" />
   </component>
   <component name="WindowStateProjectService">
     <state x="410" y="235" key="DiffContextDialog" timestamp="1606038330803">
@@ -386,11 +402,15 @@
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="401" y="475" key="MultipleFileMergeDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1606331053718" />
-    <state x="1857" y="350" width="1218" height="947" key="Vcs.Push.Dialog.v2" timestamp="1606865623519">
+    <state x="2684" y="161" width="969" height="1120" key="VCS.FileHistoryDialog" timestamp="1606867737169">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="2684" y="161" width="969" height="1120" key="VCS.FileHistoryDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1606867737169" />
+    <state x="1857" y="350" width="1218" height="947" key="Vcs.Push.Dialog.v2" timestamp="1606866628464">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="1857" y="343" width="1218" height="947" key="Vcs.Push.Dialog.v2/0.0.5120.1410@0.0.5120.1410" timestamp="1606038431825" />
-    <state x="1857" y="350" key="Vcs.Push.Dialog.v2/0.0.5120.1440@0.0.5120.1440" timestamp="1606865623519" />
+    <state x="1857" y="350" key="Vcs.Push.Dialog.v2/0.0.5120.1440@0.0.5120.1440" timestamp="1606866628464" />
     <state x="3179" y="152" width="1069" height="1059" key="dock-window-1" timestamp="1606003408185">
       <screen x="0" y="0" width="5120" height="1410" />
     </state>
