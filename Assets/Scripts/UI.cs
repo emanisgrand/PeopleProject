@@ -16,11 +16,14 @@ public class UI : MonoBehaviour
 
     //player stats text
     [Header("Player Stats Text")]
-    public Text focusText;
-    public Text courageText,
-        commitmentText,
+    public Text courageText;
+    public Text commitmentText,
         transparencyText,
         respectText;
+
+    //focus slider
+    [Header("Focus Slider")]
+    public Slider focusSlider;
 
     //team stats text
     [Header("Team Stats Text")]
@@ -68,22 +71,13 @@ public class UI : MonoBehaviour
 
     public void updateTimeSlider()
     {
-        for(int i = 0; i < sliderStepPoints.Length; i++)
-        {
-            if(GameManager.instance.myTime.timeUnits > 0 && GameManager.instance.myTime.timeUnits < sliderStepPoints[i])
-            {
-                timeSlider.value = i;
-            } else if (GameManager.instance.myTime.timeUnits <= 0)
-            {
-                timeSlider.value = sliderStepPoints.Length - 1;
-                break;
-            }
-        }
+        timeSlider.value = timeIconIndex;
     }
 
     public void updatePlayerStatsText()
     {
-        focusText.text = GameManager.instance.player.Focus.ToString();
+        Debug.Log(GameManager.instance.player.focusPercentage);
+        focusSlider.value = 100 - GameManager.instance.player.focusPercentage;
         courageText.text = GameManager.instance.player.Courage.ToString();
         commitmentText.text = GameManager.instance.player.Commitment.ToString();
         transparencyText.text = GameManager.instance.player.Transparency.ToString();

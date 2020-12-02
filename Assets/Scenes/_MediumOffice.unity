@@ -5325,11 +5325,11 @@ MonoBehaviour:
   timeIcons: []
   timeSlider: {fileID: 530287807}
   sliderStepPoints: 100000000e000000090000000400000001000000
-  focusText: {fileID: 0}
   courageText: {fileID: 1443787348}
-  commitmentText: {fileID: 0}
-  transparencyText: {fileID: 0}
-  respectText: {fileID: 0}
+  commitmentText: {fileID: 767193374}
+  transparencyText: {fileID: 2013634893}
+  respectText: {fileID: 2121992747}
+  focusSlider: {fileID: 539850032}
   feedbackText: {fileID: 1444843057}
   qualityText: {fileID: 1947764521}
   documentationText: {fileID: 364017530}

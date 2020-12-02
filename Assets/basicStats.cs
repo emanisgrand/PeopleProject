@@ -51,7 +51,7 @@ public class basicStats
 
     public basicStats()
     {
-        MaxFocus = 10;
+        MaxFocus = 25;
         Commitment = 1;
         Transparency = 1;
         Respect = 1;

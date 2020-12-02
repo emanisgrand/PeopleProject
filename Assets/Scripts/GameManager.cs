@@ -211,7 +211,7 @@ public class GameTime
     public void decTwoTimeUnits( timeUnitCheck status)
     {
 
-        UI.instance.updateTimeIcon(timeUnitCheck.timeUnitStatus.consumed);
+        UI.instance.updateTimeIcon(status.myStatus);
 
         timeUnits -= 1;
 
@@ -275,7 +275,6 @@ public class timeUnitCheck
     public enum timeUnitStatus
     {
         none,
-        consumed,
         success,
         failure
     };

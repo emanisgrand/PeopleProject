@@ -23,9 +23,5 @@ public class TimeIcon : MonoBehaviour
         if(status == timeUnitCheck.timeUnitStatus.failure){
             myImage.color = Color.grey;
         }
-
-        if(status == timeUnitCheck.timeUnitStatus.consumed){
-            myImage.color = new Color(0, 0, 0, 0);
-        }
     }
 }

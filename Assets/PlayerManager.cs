@@ -6,7 +6,12 @@ using UnityEngine;
 public class PlayerManager : basicStats
 {
 
-
+    public float focusPercentage
+    {
+        get {
+            return ((float)Focus / (float)MaxFocus) * 100;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
