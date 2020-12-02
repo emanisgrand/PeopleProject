@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
         if(playerRoll >= threshhold)
         {
             Debug.Log("Success: " + playerRoll);
-            player.MaxFocus += subTask.levelUpStats.Focus;
+            player.Focus += subTask.levelUpStats.Focus;
             player.Commitment += subTask.levelUpStats.Commitment;
             player.Transparency += subTask.levelUpStats.Transparency;
             player.Respect += subTask.levelUpStats.Respect;
@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour
             timeCheck.myStatus = timeUnitCheck.timeUnitStatus.success;
         } else {
             Debug.Log("Failure " + playerRoll);
-            player.MaxFocus -= subTask.levelDownStats.Focus;
+            player.Focus -= subTask.levelDownStats.Focus;
             player.Commitment -= subTask.levelDownStats.Commitment;
             player.Transparency -= subTask.levelDownStats.Transparency;
             player.Respect -= subTask.levelDownStats.Respect;
@@ -96,6 +96,11 @@ public class GameManager : MonoBehaviour
             teamStats.feedback -= subTask.levelDownTeamStats.feedback;
             timeCheck.myStatus = timeUnitCheck.timeUnitStatus.failure;
         }
+
+        if (subTask.addToFocus)
+            player.incFocus(subTask.focusCostMin, subTask.focusCostMax);
+        else
+            player.decFocus(subTask.focusCostMin, subTask.focusCostMax);
 
         myTime.decTimeUnit(timeCheck);
 
@@ -146,7 +151,7 @@ public class GameManager : MonoBehaviour
         if (playerRoll >= threshhold)
         {
             Debug.Log("Success: " + playerRoll);
-            player.MaxFocus += subTask.levelUpStats.Focus;
+            player.Focus += subTask.levelUpStats.Focus;
             player.Commitment += subTask.levelUpStats.Commitment;
             player.Transparency += subTask.levelUpStats.Transparency;
             player.Respect += subTask.levelUpStats.Respect;
@@ -159,7 +164,7 @@ public class GameManager : MonoBehaviour
         else
         {
             Debug.Log("Failure: " + playerRoll);
-            player.MaxFocus -= subTask.levelDownStats.Focus;
+            player.Focus -= subTask.levelDownStats.Focus;
             player.Commitment -= subTask.levelDownStats.Commitment;
             player.Transparency -= subTask.levelDownStats.Transparency;
             player.Respect -= subTask.levelDownStats.Respect;
@@ -168,7 +173,13 @@ public class GameManager : MonoBehaviour
             teamStats.quality -= subTask.levelDownTeamStats.quality;
             teamStats.feedback -= subTask.levelDownTeamStats.feedback;
             timeCheck.myStatus = timeUnitCheck.timeUnitStatus.failure;
+            player.CurrentFocus -= subTask.focusPenalty;
         }
+
+        if (subTask.addToFocus)
+            player.incFocus(subTask.focusCostMin, subTask.focusCostMax);
+        else
+            player.decFocus(subTask.focusCostMin, subTask.focusCostMax);
 
         myTime.decTwoTimeUnits(timeCheck);
 

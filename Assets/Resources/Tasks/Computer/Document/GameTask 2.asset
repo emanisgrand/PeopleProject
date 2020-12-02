@@ -27,18 +27,36 @@ MonoBehaviour:
     thresholdModifier: 0
     levelUpStats:
       Focus: 0
-      MaxFocus: 0
       Commitment: 0
-      Openness: 0
+      Transparency: 0
       Respect: 0
       Courage: 0
+      FocusLevel: 0
+      CommitmentLevel: 0
+      TransparencyLevel: 0
+      RespectLevel: 0
+      CourageLevel: 0
+      FocusLevelPoints: 
+      CommitmentLevelPoints: 
+      TransparencyLevelPoints: 
+      RespectLevelPoints: 
+      CourageLevelPoints: 
     levelDownStats:
       Focus: 0
-      MaxFocus: 0
       Commitment: 0
-      Openness: 0
+      Transparency: 0
       Respect: 0
       Courage: 0
+      FocusLevel: 0
+      CommitmentLevel: 0
+      TransparencyLevel: 0
+      RespectLevel: 0
+      CourageLevel: 0
+      FocusLevelPoints: 
+      CommitmentLevelPoints: 
+      TransparencyLevelPoints: 
+      RespectLevelPoints: 
+      CourageLevelPoints: 
     levelUpTeamStats:
       documentation: 1
       quality: 0
@@ -47,6 +65,10 @@ MonoBehaviour:
       documentation: 1
       quality: 1
       feedback: 1
+    focusCostMin: 3
+    focusCostMax: 5
+    focusPenalty: 4
+    addToFocus: 0
   hourTask:
     actions:
     - actionType: 1
@@ -62,18 +84,36 @@ MonoBehaviour:
     thresholdModifier: 0
     levelUpStats:
       Focus: 0
-      MaxFocus: 0
       Commitment: 0
-      Openness: 0
+      Transparency: 0
       Respect: 1
       Courage: 0
+      FocusLevel: 0
+      CommitmentLevel: 0
+      TransparencyLevel: 0
+      RespectLevel: 0
+      CourageLevel: 0
+      FocusLevelPoints: 
+      CommitmentLevelPoints: 
+      TransparencyLevelPoints: 
+      RespectLevelPoints: 
+      CourageLevelPoints: 
     levelDownStats:
       Focus: 0
-      MaxFocus: 0
       Commitment: 0
-      Openness: 0
+      Transparency: 0
       Respect: 0
       Courage: 0
+      FocusLevel: 0
+      CommitmentLevel: 0
+      TransparencyLevel: 0
+      RespectLevel: 0
+      CourageLevel: 0
+      FocusLevelPoints: 
+      CommitmentLevelPoints: 
+      TransparencyLevelPoints: 
+      RespectLevelPoints: 
+      CourageLevelPoints: 
     levelUpTeamStats:
       documentation: 1
       quality: 1
@@ -82,3 +122,7 @@ MonoBehaviour:
       documentation: 1
       quality: 1
       feedback: 1
+    focusCostMin: 6
+    focusCostMax: 9
+    focusPenalty: 4
+    addToFocus: 0

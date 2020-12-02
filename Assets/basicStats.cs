@@ -5,14 +5,26 @@ using UnityEngine;
 [System.Serializable]
 public class basicStats
 {
-
-    public int Focus,
-        MaxFocus,
-        Commitment,
+    [Header("Stat Scores")]
+    public int Focus;
+        public int Commitment,
         Transparency,
         Respect,
         Courage;
 
+    [Header("Stat Levels")]
+    public int FocusLevel;
+    public int CommitmentLevel,
+        TransparencyLevel,
+        RespectLevel,
+        CourageLevel;
+
+    [Header("Stat Levels")]
+    public int[] FocusLevelPoints;
+    public int[] CommitmentLevelPoints,
+        TransparencyLevelPoints,
+        RespectLevelPoints,
+        CourageLevelPoints;
 
     public int getFocus()
     {
@@ -41,21 +53,19 @@ public class basicStats
 
     public basicStats(int focus, int commitment, int transparency, int respect, int courage)
     {
-        MaxFocus = focus;
+        Focus = focus;
         Commitment = commitment;
         Transparency = transparency;
         Respect = respect;
         Courage = courage;
-        Focus = MaxFocus;
     }
 
     public basicStats()
     {
-        MaxFocus = 25;
         Commitment = 1;
         Transparency = 1;
         Respect = 1;
         Courage = 1;
-        Focus = MaxFocus;
+        Focus = 1;
     }
 }

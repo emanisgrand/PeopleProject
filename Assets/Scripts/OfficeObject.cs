@@ -66,5 +66,10 @@ public class OfficeObject : MonoBehaviour
     {
         myCanvas.SetActive(setting);
         showingWindow = setting;
+
+        if (showingWindow)
+        {
+            setTaskPanel(false);
+        }
     }
 }

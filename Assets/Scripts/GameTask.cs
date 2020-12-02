@@ -13,12 +13,16 @@ public class GameTask : ScriptableObject
 [System.Serializable]
 public class SubTask
 {
-    public List<action> actions;
-    public int threshold,
-        thresholdModifier;
-    public basicStats levelUpStats = new basicStats(0, 0, 0, 0, 0),
-        levelDownStats = new basicStats(0, 0, 0, 0, 0);
-    public TeamStats levelUpTeamStats, levelDownTeamStats;
+    public List<action> actions; //list of actions for the roll
+    public int threshold, //threshold for the player roll to reach
+        thresholdModifier; //a modifier that will add a random value between 0 and thresholdModifier.
+    public basicStats levelUpStats = new basicStats(0, 0, 0, 0, 0), //stats used to increase player scores
+        levelDownStats = new basicStats(0, 0, 0, 0, 0); //stats used to decrease player scores
+    public TeamStats levelUpTeamStats, levelDownTeamStats; //team stats for increasing and decreasing, same as player
+    //minimum and maximum focus cost to the player, and a extra penelty to focus if they fail
+    public float focusCostMin, focusCostMax, focusPenalty;
+    //will this add to focus instead?
+    public bool addToFocus;
 }
 
 [System.Serializable]

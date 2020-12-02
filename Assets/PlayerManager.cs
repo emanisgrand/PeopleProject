@@ -5,23 +5,29 @@ using UnityEngine;
 [System.Serializable]
 public class PlayerManager : basicStats
 {
-
+    public float CurrentFocus = 100f, MaxFocus = 100f;
     public float focusPercentage
     {
         get {
-            return ((float)Focus / (float)MaxFocus) * 100;
+            return (CurrentFocus / MaxFocus) * 100f;
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public void decFocus(float min, float max)
     {
-        
+        Random.InitState((int)System.DateTime.Now.Ticks);
+
+        float amount = Random.Range(min, max);
+
+        CurrentFocus -= amount;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void incFocus(float min, float max)
     {
-        
+        Random.InitState((int)System.DateTime.Now.Ticks);
+
+        float amount = Random.Range(min, max);
+
+        CurrentFocus += amount;
     }
 }
