@@ -5333,6 +5333,7 @@ MonoBehaviour:
   feedbackText: {fileID: 1444843057}
   qualityText: {fileID: 1947764521}
   documentationText: {fileID: 364017530}
+  moonImage: {fileID: 2107009193}
 --- !u!1001 &326227086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9774,8 +9775,8 @@ MonoBehaviour:
   m_HandleRect: {fileID: 33289302}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -16808,7 +16809,7 @@ MonoBehaviour:
     week: 1
     quarter: 1
     minuteIncrease: 30
-    startUnits: 0
+    startUnits: 16
     lastDayOfWeek: 5
     lastWeek: 4
     lastQuarter: 4
@@ -16836,6 +16837,11 @@ MonoBehaviour:
   - {fileID: 1208419588}
   - {fileID: 130719211}
   - {fileID: 353237766}
+  gamePercentage: 0
+  currentPercentage: 0
+  quarterPercentage: 0
+  weekPercentage: 0
+  dayPercentage: 0
 --- !u!1001 &903260041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38634,7 +38640,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.38
+  m_FillAmount: 1
   m_FillClockwise: 0
   m_FillOrigin: 0
   m_UseSpriteMesh: 0

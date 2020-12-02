@@ -16,6 +16,11 @@ public class GameManager : MonoBehaviour
 
     public List<TimeIcon> timeIcons;
     public List<Transform> OfficeWayPoints;
+    public float gamePercentage,
+        currentPercentage,
+        quarterPercentage,
+        weekPercentage,
+        dayPercentage;
     private void Awake()
     {
         
@@ -168,6 +173,15 @@ public class GameManager : MonoBehaviour
         myTime.decTwoTimeUnits(timeCheck);
 
     }
+
+    void Update()
+    {
+        gamePercentage = myTime.gamePercentage;
+        currentPercentage = myTime.currentGamePercentage;
+        quarterPercentage = myTime.quarterPercentage;
+        weekPercentage = myTime.weekPercentage;
+        dayPercentage = myTime.dayPercentage;
+    }
 }
 
 
@@ -192,6 +206,46 @@ public class GameTime
         lastDayOfWeek,        //when's the last day of the week?
         lastWeek,             //when's the last week of the quarter?
         lastQuarter;          //when's the final quarter?
+
+    public float currentGamePercentage
+    {
+        get
+        {
+            return gamePercentage == 100f ? gamePercentage : gamePercentage + quarterPercentage + weekPercentage + dayPercentage;
+        }
+    }
+
+    public float gamePercentage
+    {
+        get
+        {
+            return ((float)(quarter-1) / (float)lastQuarter) * 100;
+        }
+    }
+
+    public float quarterPercentage
+    {
+        get
+        {
+            return ((float)(week-1) / (float)lastWeek) * 25f;
+        }
+    }
+
+    public float weekPercentage
+    {
+        get
+        {
+            return ((float)(dayOfWeek - 1) / (float)lastDayOfWeek) * 6.25f;
+        }
+    }
+
+    public float dayPercentage
+    {
+        get
+        {
+            return ((float)(startUnits - timeUnits) / (float)startUnits) * 1.25f;
+        }
+    }
 
     //main function for decreasing current time units.
     public void decTimeUnit(timeUnitCheck status)

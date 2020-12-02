@@ -32,7 +32,7 @@ public class UI : MonoBehaviour
         documentationText;
 
 
-
+    public Image moonImage;
 
     public int timeIconIndex {
         get
@@ -96,5 +96,11 @@ public class UI : MonoBehaviour
         updateTimeSlider();
         updatePlayerStatsText();
         updateTeamStatsText();
+        updateMoonImage();
+    }
+
+    public void updateMoonImage()
+    {
+        moonImage.fillAmount = GameManager.instance.currentPercentage / 100;
     }
 }
