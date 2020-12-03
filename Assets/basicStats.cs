@@ -12,19 +12,7 @@ public class basicStats
         Respect,
         Courage;
 
-    [Header("Stat Levels")]
-    public int FocusLevel;
-    public int CommitmentLevel,
-        TransparencyLevel,
-        RespectLevel,
-        CourageLevel;
-
-    [Header("Stat Levels")]
-    public int[] FocusLevelPoints;
-    public int[] CommitmentLevelPoints,
-        TransparencyLevelPoints,
-        RespectLevelPoints,
-        CourageLevelPoints;
+    
 
     public int getFocus()
     {
@@ -58,11 +46,6 @@ public class basicStats
         Transparency = transparency;
         Respect = respect;
         Courage = courage;
-        FocusLevel = 1;
-        CommitmentLevel = 1;
-        RespectLevel = 1;
-        TransparencyLevel = 1;
-        CourageLevel = 1;
     }
 
     public basicStats()
@@ -72,10 +55,5 @@ public class basicStats
         Respect = 1;
         Courage = 1;
         Focus = 1;
-        FocusLevel = 1;
-        CommitmentLevel = 1;
-        RespectLevel = 1;
-        TransparencyLevel = 1;
-        CourageLevel = 1;
     }
 }
