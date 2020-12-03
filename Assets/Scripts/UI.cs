@@ -47,6 +47,8 @@ public class UI : MonoBehaviour
 
     public Image moonImage;
 
+    public GameObject skillTreePanel;
+
     public int timeIconIndex {
         get
         {
@@ -145,7 +147,7 @@ public class UI : MonoBehaviour
     {
         updateTimeSlider();
         updatePlayerStatsText();
-        updateTeamStatsText();
+        //updateTeamStatsText();
         updateMoonImage();
     }
 
@@ -187,5 +189,10 @@ public class UI : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void setSkillTreePanel()
+    {
+        skillTreePanel.SetActive(!skillTreePanel.activeInHierarchy);
     }
 }
