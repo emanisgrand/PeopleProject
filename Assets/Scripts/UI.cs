@@ -50,7 +50,10 @@ public class UI : MonoBehaviour
     public int timeIconIndex {
         get
         {
-            return (timeIcons.Count - GameManager.instance.myTime.timeUnits);
+            if (GameManager.instance)
+                return (timeIcons.Count - GameManager.instance.myTime.timeUnits);
+            else
+                return 0;
         }
     }
     // when half hour is set
@@ -117,19 +120,25 @@ public class UI : MonoBehaviour
 
     public void updatePlayerStatsText()
     {
-        
-        focusSlider.value = 100 - GameManager.instance.player.focusPercentage;
-        courageText.text = GameManager.instance.player.CourageLevel.ToString();
-        commitmentText.text = GameManager.instance.player.CommitmentLevel.ToString();
-        transparencyText.text = GameManager.instance.player.TransparencyLevel.ToString();
-        respectText.text = GameManager.instance.player.RespectLevel.ToString();
+        if (GameManager.instance)
+        {
+            Debug.Log(100f - GameManager.instance.player.CurrentFocus);
+            focusSlider.value = (100 - GameManager.instance.player.CurrentFocus);
+            courageText.text = GameManager.instance.player.CourageLevel.ToString();
+            commitmentText.text = GameManager.instance.player.CommitmentLevel.ToString();
+            transparencyText.text = GameManager.instance.player.TransparencyLevel.ToString();
+            respectText.text = GameManager.instance.player.RespectLevel.ToString();
+        }
     }
 
     public void updateTeamStatsText()
     {
-        feedbackText.text = GameManager.instance.teamStats.feedback.ToString();
-        qualityText.text = GameManager.instance.teamStats.quality.ToString();
-        documentationText.text = GameManager.instance.teamStats.documentation.ToString();
+        if (GameManager.instance)
+        {
+            feedbackText.text = GameManager.instance.teamStats.feedback.ToString();
+            qualityText.text = GameManager.instance.teamStats.quality.ToString();
+            documentationText.text = GameManager.instance.teamStats.documentation.ToString();
+        }
     }
 
     void Update()
@@ -142,6 +151,7 @@ public class UI : MonoBehaviour
 
     public void updateMoonImage()
     {
+        if(GameManager.instance)
         moonImage.fillAmount = GameManager.instance.currentPercentage / 100;
     }
 
@@ -169,7 +179,7 @@ public class UI : MonoBehaviour
                 {
                     checksInCalendar[y][x].text = "o";
                     checksInCalendar[y][x].color = Color.green;
-                } else if(myDay.myStatus == dayCheck.dayStatus.failure)
+                } else if(myDay.myStatus == dayCheck.dayStatus.failure || myDay.myStatus == dayCheck.dayStatus.none)
                 {
                     checksInCalendar[y][x].text = "x";
                     checksInCalendar[y][x].color = Color.red;

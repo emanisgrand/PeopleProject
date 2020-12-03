@@ -41,7 +41,13 @@ public class GameLog : MonoBehaviour
         if (currentQuarter.myWeeks.Count > myTime.lastWeek)
         {
             insertQuarterUnit();
-            currentQuarter = new quarterCheck();
+
+            if(myQuarters.Count < myTime.lastQuarter)
+                currentQuarter = new quarterCheck();
+            else
+            {
+                //ending goes here.
+            }
         }
     }
 
