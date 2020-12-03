@@ -21,6 +21,10 @@ public class GameManager : MonoBehaviour
         quarterPercentage,
         weekPercentage,
         dayPercentage;
+
+    public Animator fadeCanvasAnim;
+
+    public bool endOfDay;
     private void Awake()
     {
         
@@ -30,6 +34,8 @@ public class GameManager : MonoBehaviour
     {
         if (instance == null)
             instance = this;
+
+        fadeCanvasAnim = GameObject.Find("FadeCanvas").GetComponent<Animator>();
     }
 
     public void doHalfHourTask()
@@ -96,6 +102,11 @@ public class GameManager : MonoBehaviour
             teamStats.feedback -= subTask.levelDownTeamStats.feedback;
             timeCheck.myStatus = timeUnitCheck.timeUnitStatus.failure;
         }
+
+        timeCheck.myTaskAction = myTask.myTaskAction;
+        timeCheck.myTaskObject = myTask.myTaskObject;
+
+        GameLog.instance.insertTimeUnit(timeCheck);
 
         if (subTask.addToFocus)
             player.incFocus(subTask.focusCostMin, subTask.focusCostMax);
@@ -176,6 +187,12 @@ public class GameManager : MonoBehaviour
             player.CurrentFocus -= subTask.focusPenalty;
         }
 
+        timeCheck.myTaskAction = myTask.myTaskAction;
+        timeCheck.myTaskObject = myTask.myTaskObject;
+
+        GameLog.instance.currentDay.myTimeUnits.Add(timeCheck);
+        GameLog.instance.currentDay.myTimeUnits.Add(timeCheck);
+
         if (subTask.addToFocus)
             player.incFocus(subTask.focusCostMin, subTask.focusCostMax);
         else
@@ -192,6 +209,22 @@ public class GameManager : MonoBehaviour
         quarterPercentage = myTime.quarterPercentage;
         weekPercentage = myTime.weekPercentage;
         dayPercentage = myTime.dayPercentage;
+
+        if(myTime.timeUnits <= 0 && !endOfDay)
+        {
+            endOfDay = true;
+            Invoke("endOfDayView", 1f);
+        }
+    }
+
+    public void endOfDayView()
+    {
+        fadeCanvasAnim.Play("FadeCanvasEnd");
+    }
+
+    public void startGameView()
+    {
+        fadeCanvasAnim.Play("FadeCanvasGame");
     }
 }
 
@@ -349,6 +382,9 @@ public class timeUnitCheck
         myStatus = status;
     }
 
+    public GameTask.taskAction myTaskAction;
+    public GameTask.taskObject myTaskObject;
+
     public timeUnitStatus myStatus;
 }
 
@@ -364,6 +400,11 @@ public class dayCheck
 
     public dayStatus myStatus;
     public List<timeUnitCheck> myTimeUnits;
+
+    public dayCheck()
+    {
+        myTimeUnits = new List<timeUnitCheck>();
+    }
 }
 
 [System.Serializable]
@@ -376,6 +417,11 @@ public class weekCheck
 
     public weekStatus myStatus;
     public List<dayCheck> myDays;
+
+    public weekCheck()
+    {
+        myDays = new List<dayCheck>();
+    }
 }
 
 [System.Serializable]
@@ -388,4 +434,11 @@ public class quarterCheck
 
     public quarterStatus myStatus;
     public List<weekCheck> myWeeks;
+
+    public quarterCheck()
+    {
+        myWeeks = new List<weekCheck>();
+    }
+
+    
 }

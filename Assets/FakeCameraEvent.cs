@@ -13,8 +13,12 @@ public class FakeCameraEvent : MonoBehaviour
     
     private Camera mainCam;
 
+    public static FakeCameraEvent instance;
+
     private void Awake()
     {
+        instance = this;
+
         if (!(Camera.main is null)) mainCam = Camera.main.GetComponent<Camera>();
         startingPosition = mainCam.transform.position;
         startingQuaternion = new Quaternion(0.118815735f,0.877471507f,-0.282694221f,0.368796259f);
@@ -40,5 +44,24 @@ public class FakeCameraEvent : MonoBehaviour
             mainCam.transform.rotation = startingQuaternion;
             mainCam.orthographic = true;
         }
+    }
+
+    public void endOfDayView()
+    {
+        Vector3 clockFacing = new Vector3(0, 90, 0);
+        transform.eulerAngles = clockFacing;
+
+        mainCam.transform.position = EODScreenPosition.position;
+        mainCam.orthographic = false;
+        UI.instance.gameStatsPanel.SetActive(false);
+        EndOfDayUI.instance.startEODView();
+    }
+
+    public void startGameView()
+    {
+        UI.instance.gameStatsPanel.SetActive(true);
+        mainCam.transform.position = startingPosition;
+        mainCam.transform.rotation = startingQuaternion;
+        mainCam.orthographic = true;
     }
 }

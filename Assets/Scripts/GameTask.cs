@@ -7,6 +7,25 @@ using UnityEditor;
 [CreateAssetMenu(fileName = "GameTask", menuName = "Data/New Game Task", order = 55)]
 public class GameTask : ScriptableObject
 {
+
+    public enum taskObject
+    {
+        computer,
+        printer
+    }
+
+    public enum taskAction
+    {
+        documentation,
+        call_Meeting,
+        Evaluate_Self,
+        Evaluate_Prompted,
+        Evaluate_Unprompted
+    }
+
+    public taskObject myTaskObject;
+    public taskAction myTaskAction;
+
     public SubTask halfHourTask, hourTask;
 }
 
