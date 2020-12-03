@@ -279,6 +279,7 @@
             <e p="ListExtensions.cs" t="Include" />
           </e>
         </e>
+        <e p="StatsPanel_IO.cs" t="Include" />
         <e p="Surfaces" t="Include">
           <e p="Outline.shader" t="Include" />
         </e>
