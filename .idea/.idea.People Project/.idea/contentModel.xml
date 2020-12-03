@@ -9,7 +9,10 @@
       <e p="Assets" t="Include">
         <e p="basicStats.cs" t="Include" />
         <e p="ComputerTasks.cs" t="Include" />
+        <e p="EndOfDayUI.cs" t="Include" />
+        <e p="FadeCanvas.cs" t="Include" />
         <e p="FakeCameraEvent.cs" t="Include" />
+        <e p="GameLog.cs" t="Include" />
         <e p="Imports" t="Include">
           <e p="AstarPathfindingProject" t="Include">
             <e p="AstarPathfindingProject.asmdef" t="Include" />
