@@ -54,14 +54,19 @@ public class FakeCameraEvent : MonoBehaviour
         mainCam.transform.position = EODScreenPosition.position;
         mainCam.orthographic = false;
         UI.instance.gameStatsPanel.SetActive(false);
+        UI.instance.timeSlider.gameObject.SetActive(false);
         EndOfDayUI.instance.startEODView();
     }
 
     public void startGameView()
     {
         UI.instance.gameStatsPanel.SetActive(true);
+        UI.instance.timeSlider.gameObject.SetActive(true);
         mainCam.transform.position = startingPosition;
         mainCam.transform.rotation = startingQuaternion;
         mainCam.orthographic = true;
+        GameManager.instance.endOfDay = false;
+        EndOfDayUI.instance.isFinished = false;
+        EndOfDayUI.instance.resetTimeImages();
     }
 }

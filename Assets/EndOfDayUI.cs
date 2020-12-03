@@ -9,11 +9,12 @@ public class EndOfDayUI : MonoBehaviour
     public static EndOfDayUI instance;
     public List<Image> timeUnitImages;
     public GameObject timeUnitContainer;
+    public bool isFinished;
 
     // Start is called before the first frame update
     void Start()
     {
-        timeUnitContainer = gameObject.transform.GetChild(0).gameObject;
+        timeUnitContainer = gameObject.transform.GetChild(0).GetChild(0).gameObject;
 
         timeUnitImages = new List<Image>();
 
@@ -28,7 +29,20 @@ public class EndOfDayUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetMouseButtonDown(0) && isFinished && GameManager.instance.endOfDay)
+        {
+            GameManager.instance.startGameView();
+        } else if(Input.GetMouseButtonDown(0) && !isFinished && GameManager.instance.endOfDay){
+            skipInit();
+        }
+    }
+
+    public void resetTimeImages()
+    {
+        for (int i = 0; i < timeUnitImages.Count; i++)
+        {
+            timeUnitImages[i].color = Color.white;
+        }
     }
 
     public void startEODView()
@@ -36,15 +50,46 @@ public class EndOfDayUI : MonoBehaviour
         StartCoroutine("initEODView");
     }
 
+    public void skipInit()
+    {
+        GameLog.instance.currentDay.updateStatus();
+
+        dayCheck myDay = GameLog.instance.currentDay;
+
+        for (int i = 0; i < myDay.myTimeUnits.Count; i++)
+        {
+
+            if (myDay.myTimeUnits[i].myStatus == timeUnitCheck.timeUnitStatus.success)
+            {
+                timeUnitImages[i].color = Color.green;
+            }
+            else if (myDay.myTimeUnits[i].myStatus == timeUnitCheck.timeUnitStatus.failure)
+            {
+                timeUnitImages[i].color = Color.grey;
+            }
+
+        }
+
+
+        GameLog.instance.insertDayUnit(myDay);
+        UI.instance.updateCalendar();
+        isFinished = true;
+    }
+
     public IEnumerator initEODView()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(.5f);
+
+        GameLog.instance.currentDay.updateStatus();
 
         dayCheck myDay = GameLog.instance.currentDay;
 
         for(int i = 0; i < myDay.myTimeUnits.Count; i++)
         {
             yield return new WaitForSeconds(.2f);
+
+            if (isFinished)
+                 yield break;
 
             if (myDay.myTimeUnits[i].myStatus == timeUnitCheck.timeUnitStatus.success)
             {
@@ -56,8 +101,10 @@ public class EndOfDayUI : MonoBehaviour
 
         }
 
+        
         GameLog.instance.insertDayUnit(myDay);
         UI.instance.updateCalendar();
+        isFinished = true;
 
     }
 }

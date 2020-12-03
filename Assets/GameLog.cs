@@ -48,9 +48,9 @@ public class GameLog : MonoBehaviour
     public void insertDayUnit(dayCheck dayUnit)
     {
         GameTime myTime = GameManager.instance.myTime;
-        myQuarters[myTime.quarter - 1].myWeeks[myTime.week - 1].myDays.Add(dayUnit);
+        currentQuarter.myWeeks[myTime.week - 1].myDays.Add(dayUnit);
 
-        if (myQuarters[myTime.quarter - 1].myWeeks[myTime.week - 1].myDays.Count >= myTime.lastDayOfWeek)
+        if ( currentQuarter.myWeeks[myTime.week - 1].myDays.Count >= myTime.lastDayOfWeek)
             insertWeekUnit();
     }
 

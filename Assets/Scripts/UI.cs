@@ -96,6 +96,14 @@ public class UI : MonoBehaviour
         }
     }
 
+    public void resetTimeIcons()
+    {
+        for(int i = 0; i < timeIcons.Count; i++)
+        {
+            timeIcons[i].myImage.color = Color.white;
+        }
+    }
+
     public void updateTimeIcon(timeUnitCheck.timeUnitStatus status)
     {
 
@@ -109,7 +117,7 @@ public class UI : MonoBehaviour
 
     public void updatePlayerStatsText()
     {
-        Debug.Log(GameManager.instance.player.focusPercentage);
+        
         focusSlider.value = 100 - GameManager.instance.player.focusPercentage;
         courageText.text = GameManager.instance.player.CourageLevel.ToString();
         commitmentText.text = GameManager.instance.player.CommitmentLevel.ToString();

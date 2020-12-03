@@ -224,6 +224,9 @@ public class GameManager : MonoBehaviour
 
     public void startGameView()
     {
+        myTime.goToNextDay();
+        UI.instance.resetTimeIcons();
+        GameLog.instance.currentDay = new dayCheck();
         fadeCanvasAnim.Play("FadeCanvasGame");
     }
 }
@@ -302,7 +305,6 @@ public class GameTime
         if (timeUnits < 1)
         {
             timeUnits = 0;
-            incDay();
         }
     }
 
@@ -320,8 +322,18 @@ public class GameTime
         if (timeUnits < 1)
         {
             timeUnits = 0;
-            incDay();
         }
+    }
+
+    public void resetTimeUnits()
+    {
+        timeUnits = startUnits;
+    }
+
+    public void goToNextDay()
+    {
+        resetTimeUnits();
+        incDay();
     }
 
     
@@ -405,6 +417,30 @@ public class dayCheck
     {
         myTimeUnits = new List<timeUnitCheck>();
     }
+
+    public void updateStatus()
+    {
+        int successes = 0, failures = 0;
+
+        for(int i = 0; i < myTimeUnits.Count; i++)
+        {
+            if(myTimeUnits[i].myStatus == timeUnitCheck.timeUnitStatus.success)
+            {
+                successes++;
+            } else if (myTimeUnits[i].myStatus == timeUnitCheck.timeUnitStatus.failure)
+            {
+                failures++;
+            }
+        }
+
+        if(successes > failures)
+        {
+            myStatus = dayStatus.success;
+        } else
+        {
+            myStatus = dayStatus.failure;
+        }
+    }
 }
 
 [System.Serializable]
@@ -422,6 +458,32 @@ public class weekCheck
     {
         myDays = new List<dayCheck>();
     }
+
+    public void updateStatus()
+    {
+        int successes = 0, failures = 0;
+
+        for (int i = 0; i < myDays.Count; i++)
+        {
+            if (myDays[i].myStatus == dayCheck.dayStatus.success)
+            {
+                successes++;
+            }
+            else if (myDays[i].myStatus == dayCheck.dayStatus.failure)
+            {
+                failures++;
+            }
+        }
+
+        if (successes > failures)
+        {
+            myStatus = weekStatus.success;
+        }
+        else
+        {
+            myStatus = weekStatus.failure;
+        }
+    }
 }
 
 [System.Serializable]
@@ -438,7 +500,33 @@ public class quarterCheck
     public quarterCheck()
     {
         myWeeks = new List<weekCheck>();
+        myWeeks.Add(new weekCheck());
     }
 
-    
+    public void updateStatus()
+    {
+        int successes = 0, failures = 0;
+
+        for (int i = 0; i < myWeeks.Count; i++)
+        {
+            if (myWeeks[i].myStatus == weekCheck.weekStatus.success)
+            {
+                successes++;
+            }
+            else if (myWeeks[i].myStatus == weekCheck.weekStatus.failure)
+            {
+                failures++;
+            }
+        }
+
+        if (successes > failures)
+        {
+            myStatus = quarterStatus.success;
+        }
+        else
+        {
+            myStatus = quarterStatus.failure;
+        }
+    }
+
 }

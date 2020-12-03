@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0b25ca1f631443682c1af40dcdb322, type: 3}
   m_Name: GameTask 2
   m_EditorClassIdentifier: 
+  myTaskObject: 0
+  myTaskAction: 0
   halfHourTask:
     actions:
     - actionType: 1
@@ -81,7 +83,7 @@ MonoBehaviour:
       playerAction: 1
       teamAction: 0
     threshold: 19
-    thresholdModifier: 0
+    thresholdModifier: 8
     levelUpStats:
       Focus: 0
       Commitment: 0
