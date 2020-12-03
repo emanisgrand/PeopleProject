@@ -78,10 +78,10 @@ public class UI : MonoBehaviour
     {
         Debug.Log(GameManager.instance.player.focusPercentage);
         focusSlider.value = 100 - GameManager.instance.player.focusPercentage;
-        courageText.text = GameManager.instance.player.Courage.ToString();
-        commitmentText.text = GameManager.instance.player.Commitment.ToString();
-        transparencyText.text = GameManager.instance.player.Transparency.ToString();
-        respectText.text = GameManager.instance.player.Respect.ToString();
+        courageText.text = GameManager.instance.player.CourageLevel.ToString();
+        commitmentText.text = GameManager.instance.player.CommitmentLevel.ToString();
+        transparencyText.text = GameManager.instance.player.TransparencyLevel.ToString();
+        respectText.text = GameManager.instance.player.RespectLevel.ToString();
     }
 
     public void updateTeamStatsText()
