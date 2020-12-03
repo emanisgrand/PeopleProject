@@ -68,5 +68,8 @@ public class FakeCameraEvent : MonoBehaviour
         GameManager.instance.endOfDay = false;
         EndOfDayUI.instance.isFinished = false;
         EndOfDayUI.instance.resetTimeImages();
+        
     }
+
+    
 }

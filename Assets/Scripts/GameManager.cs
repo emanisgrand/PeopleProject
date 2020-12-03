@@ -334,6 +334,7 @@ public class GameTime
     {
         resetTimeUnits();
         incDay();
+        GameLog.instance.checkForNewQuarter();
     }
 
     

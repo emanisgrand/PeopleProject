@@ -18,7 +18,6 @@ public class GameLog : MonoBehaviour
         myQuarters = new List<quarterCheck>();
         currentDay = new dayCheck();
         currentQuarter = new quarterCheck();
-        myQuarters.Add(new quarterCheck());
     }
 
     // Update is called once per frame
@@ -38,16 +37,26 @@ public class GameLog : MonoBehaviour
         GameTime myTime = GameManager.instance.myTime;
         currentQuarter.myWeeks.Add(new weekCheck());
 
-        if (currentQuarter.myWeeks.Count > myTime.lastWeek)
+        if (currentQuarter.myWeeks.Count >= myTime.lastWeek)
         {
             insertQuarterUnit();
 
-            if(myQuarters.Count < myTime.lastQuarter)
-                currentQuarter = new quarterCheck();
-            else
-            {
-                //ending goes here.
-            }
+            
+        }
+    }
+
+    public void checkForNewQuarter()
+    {
+        if (currentQuarter.myWeeks.Count == GameManager.instance.myTime.lastWeek &&
+                currentQuarter.myWeeks[GameManager.instance.myTime.week - 1].myDays.Count >= GameManager.instance.myTime.lastDayOfWeek
+                && myQuarters.Count < GameManager.instance.myTime.lastQuarter)
+        {
+            currentQuarter = new quarterCheck();
+            UI.instance.initCalendar();
+        }
+        else
+        {
+            //ending goes here.
         }
     }
 
@@ -56,7 +65,7 @@ public class GameLog : MonoBehaviour
         GameTime myTime = GameManager.instance.myTime;
         currentQuarter.myWeeks[myTime.week - 1].myDays.Add(dayUnit);
 
-        if ( currentQuarter.myWeeks[myTime.week - 1].myDays.Count >= myTime.lastDayOfWeek)
+        if (currentQuarter.myWeeks.Count < myTime.lastWeek && currentQuarter.myWeeks[myTime.week - 1].myDays.Count >= myTime.lastDayOfWeek)
             insertWeekUnit();
     }
 

@@ -162,6 +162,7 @@ public class UI : MonoBehaviour
             for(int x = 0; x < daysInCalendar[y].Count; x++)
             {
                 checksInCalendar[y][x].text = "-";
+                daysInCalendar[y][x].GetComponent<Image>().color = Color.black;
             }
         }
     }
@@ -178,11 +179,11 @@ public class UI : MonoBehaviour
                 if (myDay.myStatus == dayCheck.dayStatus.success)
                 {
                     checksInCalendar[y][x].text = "o";
-                    checksInCalendar[y][x].color = Color.green;
+                    daysInCalendar[y][x].GetComponent<Image>().color = Color.green;
                 } else if(myDay.myStatus == dayCheck.dayStatus.failure || myDay.myStatus == dayCheck.dayStatus.none)
                 {
                     checksInCalendar[y][x].text = "x";
-                    checksInCalendar[y][x].color = Color.red;
+                    daysInCalendar[y][x].GetComponent<Image>().color = Color.red;
                 }
             }
         }

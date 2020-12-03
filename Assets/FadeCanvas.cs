@@ -24,5 +24,11 @@ public class FadeCanvas : MonoBehaviour
     public void startGameView()
     {
         FakeCameraEvent.instance.startGameView();
+        
+    }
+
+    public void resetQuarterCalendar()
+    {
+        GameLog.instance.checkForNewQuarter();
     }
 }
