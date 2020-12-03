@@ -76,6 +76,7 @@
     <setting file="mock://D:/Unity/UpWork/People Project/People Project/Assets/Scenes/_MediumOffice.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnScreenCV.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/Unity/UpWork/People Project/People Project/Assets/Scenes/_MediumOffice.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Unity/UpWork/People Project/People Project/Assets/Scenes/_MediumOffice.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FakeCameraEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OfficeObject.cs" root0="FORCE_HIGHLIGHTING" />
@@ -351,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606866625371</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="EOD clock face UI">
+      <created>1606958177606</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1606958177607</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,7 +410,8 @@
     <MESSAGE value="Adding EOQ calendar UI" />
     <MESSAGE value="updated EOQ calendar UI" />
     <MESSAGE value="another update to EOQ calendar UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="another update to EOQ calendar UI" />
+    <MESSAGE value="EOD clock face UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="EOD clock face UI" />
   </component>
   <component name="WindowStateProjectService">
     <state x="410" y="235" key="DiffContextDialog" timestamp="1606038330803">
